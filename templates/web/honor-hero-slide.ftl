@@ -1,8 +1,12 @@
 <article
-  class="honor-hero-slide
-         honor-hero-slide--${contentModel.layout_s!'full'}
-         honor-hero-slide--${contentModel.theme_s!'light'}"
+  class="
+    honor-hero-slide
+    honor-hero-slide--${contentModel.layout_s!'full'}
+    honor-hero-slide--${contentModel.theme_s!'light'}
+    <#if isActive?? && isActive>is-active</#if>
+  "
   data-hero-slide
+  aria-hidden="<#if isActive?? && isActive>false<#else>true</#if>"
 >
   <picture class="honor-hero-slide__picture">
     <#if (contentModel.mobileImage_s!'')?has_content>
