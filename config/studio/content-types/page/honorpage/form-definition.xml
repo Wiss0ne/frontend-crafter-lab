@@ -312,7 +312,7 @@
 					<properties>
 						<property>
 							<name>contentType</name>
-							<value>/component/honor-hero-slide</value>
+							<value>/component/honorheroslide</value>
 								<type>string</type>
 						</property>
 					</properties>
