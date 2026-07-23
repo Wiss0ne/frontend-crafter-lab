@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/honorpage</content-type>
+	<display-template>/templates/web/honor.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>83f4</objectGroupId>
+	<objectId>83f49811-776c-1b34-cbff-ba86770b30ff</objectId>
+	<internal-name>HONOR</internal-name>
+	<navLabel>HONOR</navLabel>
+	<browserTitle_s>HONOR HK</browserTitle_s>
+	<file-name>index.xml</file-name>
+	<folder-name>honor</folder-name>
+	<placeInNav>false</placeInNav>
+	<orderDefault_f>-1</orderDefault_f>
+	<heroSlides_o item-list="true">	<item datasource="hONORHeroSlides" inline="true">	<key>0c8f6506-bd48-edfa-5477-ffbacc21c18d</key>
+	<value>HONOR Magic V5 Hero</value>
+<component id="0c8f6506-bd48-edfa-5477-ffbacc21c18d">
+	<content-type>/component/honorheroslide</content-type>
+	<display-template>/templates/web/honor-hero-slide.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>0c8f</objectGroupId>
+	<objectId>0c8f6506-bd48-edfa-5477-ffbacc21c18d</objectId>
+	<file-name>0c8f6506-bd48-edfa-5477-ffbacc21c18d.xml</file-name>
+	<folder-name/>
+	<layout_s>full</layout_s>
+	<theme_s>dark</theme_s>
+	<desktopImage_s/>
+	<mobileImage_s/>
+	<internal-name>HONOR Magic V5 Hero</internal-name>
+	<eyebrow_s>ULTRA THIN FOLDABLE</eyebrow_s>
+	<title_t>HONOR Magic V5</title_t>
+	<tagline_t>AI｜世一輕薄，唯一旗艦</tagline_t>
+	<primaryButtonLabel_s>購買</primaryButtonLabel_s>
+	<primaryButtonURL_s>#honor-products</primaryButtonURL_s>
+	<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+	<secondaryButtonURL_s>#honor-products</secondaryButtonURL_s>
+	<createdDate>2026-07-23T09:52:45.325Z</createdDate>
+	<createdDate_dt>2026-07-23T09:52:45.325Z</createdDate_dt>
+	<lastModifiedDate>2026-07-23T09:52:45.325Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-23T09:52:45.325Z</lastModifiedDate_dt>
+</component>
+	</item></heroSlides_o>
+	<sEODescription_t>HONOR 香港首頁</sEODescription_t>
+	<createdDate>2026-07-23T09:51:15.738Z</createdDate>
+	<createdDate_dt>2026-07-23T09:51:15.738Z</createdDate_dt>
+	<lastModifiedDate>2026-07-23T09:51:15.738Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-23T09:51:15.738Z</lastModifiedDate_dt>
+</page>
