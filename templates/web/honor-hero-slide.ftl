@@ -25,7 +25,12 @@
     </#if>
   </picture>
 
-  <div class="honor-hero-slide__content">
+<div class="
+  honor-hero-slide__content
+  <#if (contentModel.theme_s!'light') == 'dark'>
+    honor-hero-slide__content--dark
+  </#if>
+">
     <#if (contentModel.eyebrow_s!'')?has_content>
       <p class="honor-eyebrow">
         ${contentModel.eyebrow_s}
