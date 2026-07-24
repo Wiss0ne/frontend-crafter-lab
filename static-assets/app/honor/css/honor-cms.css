@@ -1,0 +1,18 @@
+.honor-content-card__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 14px;
+}
+
+.honor-events__list {
+  display: grid;
+  gap: 18px;
+}
+
+@media (max-width: 820px) {
+  .honor-content-card__actions {
+    gap: 16px;
+  }
+}

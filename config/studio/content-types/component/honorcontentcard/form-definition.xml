@@ -1,0 +1,417 @@
+<form>
+  <title>HONOR Content Card</title>
+  <description>Reusable HONOR homepage content with code-owned layout presets.</description>
+  <objectType>component</objectType>
+  <content-type>/component/honorcontentcard</content-type>
+  <imageThumbnail></imageThumbnail>
+  <quickCreate>false</quickCreate>
+  <quickCreatePath></quickCreatePath>
+  <properties>
+    <property>
+      <name>display-template</name>
+      <label>Display Template</label>
+      <value>/templates/web/honor-content-card.ftl</value>
+      <type>template</type>
+    </property>
+    <property>
+      <name>no-template-required</name>
+      <label>No Template Required</label>
+      <value></value>
+      <type>boolean</type>
+    </property>
+    <property>
+      <name>merge-strategy</name>
+      <label>Merge Strategy</label>
+      <value>inherit-levels</value>
+      <type>string</type>
+    </property>
+  </properties>
+  <sections>
+    <section>
+      <title>Component Settings</title>
+      <description>Select a preset first. The preset owns positioning and visual layout.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>auto-filename</type>
+          <id>file-name</id>
+          <iceId></iceId>
+          <title>Component ID</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties></properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>internal-name</id>
+          <iceId></iceId>
+          <title>Internal Name</title>
+          <description>Only used to identify this item in Studio.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>dropdown</type>
+          <id>layoutPreset_s</id>
+          <iceId></iceId>
+          <title>Layout Preset</title>
+          <description>Controls HTML structure and element placement.</description>
+          <defaultValue>product-card</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>datasource</name><value>cardLayoutPresetOptions</value><type>datasource:item</type></property>
+            <property><name>emptyvalue</name><value>false</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>dropdown</type>
+          <id>category_s</id>
+          <iceId></iceId>
+          <title>Product Category</title>
+          <description>Used by the product filter. Ignored by non-product presets.</description>
+          <defaultValue>phone</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>datasource</name><value>productCategoryOptions</value><type>datasource:item</type></property>
+            <property><name>emptyvalue</name><value>false</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>dropdown</type>
+          <id>cardSize_s</id>
+          <iceId></iceId>
+          <title>Product Card Size</title>
+          <description>Ignored by non-product presets.</description>
+          <defaultValue>standard</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>datasource</name><value>cardSizeOptions</value><type>datasource:item</type></property>
+            <property><name>emptyvalue</name><value>false</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>dropdown</type>
+          <id>theme_s</id>
+          <iceId></iceId>
+          <title>Theme</title>
+          <description>Controls button contrast or the violet product background.</description>
+          <defaultValue>light</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>datasource</name><value>cardThemeOptions</value><type>datasource:item</type></property>
+            <property><name>emptyvalue</name><value>false</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>anchorId_s</id>
+          <iceId></iceId>
+          <title>Anchor ID</title>
+          <description>Optional HTML anchor without #, for example honor-magic8.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>pattern</name><value><![CDATA[^[A-Za-z][A-Za-z0-9_-]*$|^$]]></value><type>string</type></constraint>
+          </constraints>
+        </field>
+      </fields>
+    </section>
+    <section>
+      <title>Content</title>
+      <description>Text and images remain editable while layout stays in code.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>input</type>
+          <id>eyebrow_s</id>
+          <iceId></iceId>
+          <title>Eyebrow / Type / Date</title>
+          <description>Small label above the title.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>title_t</id>
+          <iceId></iceId>
+          <title>Title</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>120</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>textarea</type>
+          <id>tagline_t</id>
+          <iceId></iceId>
+          <title>Tagline</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>rows</name><value>3</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>allowResize</name><value>true</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>image-picker</type>
+          <id>primaryImage_s</id>
+          <iceId></iceId>
+          <title>Primary Image</title>
+          <description>Main image, or the left image of the feature banner.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>width</name><value></value><type>range</type></property>
+            <property><name>height</name><value></value><type>range</type></property>
+            <property><name>thumbnailWidth</name><value>200</value><type>int</type></property>
+            <property><name>thumbnailHeight</name><value>200</value><type>int</type></property>
+            <property><name>imageManager</name><value>hONORExistingImages</value><type>datasource:image</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>allowImageLink</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>primaryImageAlt_s</id>
+          <iceId></iceId>
+          <title>Primary Image Alt Text</title>
+          <description>Describe the image for accessibility.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>160</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>image-picker</type>
+          <id>secondaryImage_s</id>
+          <iceId></iceId>
+          <title>Secondary Image</title>
+          <description>Optional right image for the feature-banner preset.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>width</name><value></value><type>range</type></property>
+            <property><name>height</name><value></value><type>range</type></property>
+            <property><name>thumbnailWidth</name><value>200</value><type>int</type></property>
+            <property><name>thumbnailHeight</name><value>200</value><type>int</type></property>
+            <property><name>imageManager</name><value>hONORExistingImages</value><type>datasource:image</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>allowImageLink</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>secondaryImageAlt_s</id>
+          <iceId></iceId>
+          <title>Secondary Image Alt Text</title>
+          <description>Describe the second image for accessibility.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>160</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>primaryButtonLabel_s</id>
+          <iceId></iceId>
+          <title>Primary Button Label</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>primaryButtonURL_s</id>
+          <iceId></iceId>
+          <title>Primary Button URL</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>secondaryButtonLabel_s</id>
+          <iceId></iceId>
+          <title>Secondary Button Label</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>secondaryButtonURL_s</id>
+          <iceId></iceId>
+          <title>Secondary Button URL</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+  </sections>
+  <datasources>
+    <datasource>
+      <type>key-value-list</type>
+      <id>cardLayoutPresetOptions</id>
+      <title>HONOR Content Layout Presets</title>
+      <interface>item</interface>
+      <properties>
+        <property>
+          <name>options</name>
+          <value>[{&quot;key&quot;:&quot;feature-banner&quot;,&quot;value&quot;:&quot;Feature Banner - Two Images&quot;},{&quot;key&quot;:&quot;product-card&quot;,&quot;value&quot;:&quot;Product Card&quot;},{&quot;key&quot;:&quot;event-orb&quot;,&quot;value&quot;:&quot;Event - Orb Artwork&quot;},{&quot;key&quot;:&quot;technology-camera&quot;,&quot;value&quot;:&quot;Technology - Camera&quot;},{&quot;key&quot;:&quot;technology-ai&quot;,&quot;value&quot;:&quot;Technology - AI&quot;}]</value>
+          <type>keyValueMap</type>
+        </property>
+        <property><name>showkeys</name><value>false</value><type>boolean</type></property>
+      </properties>
+    </datasource>
+    <datasource>
+      <type>key-value-list</type>
+      <id>productCategoryOptions</id>
+      <title>Product Categories</title>
+      <interface>item</interface>
+      <properties>
+        <property>
+          <name>options</name>
+          <value>[{&quot;key&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;Phone&quot;},{&quot;key&quot;:&quot;laptop&quot;,&quot;value&quot;:&quot;Laptop&quot;},{&quot;key&quot;:&quot;tablet&quot;,&quot;value&quot;:&quot;Tablet&quot;},{&quot;key&quot;:&quot;wearable&quot;,&quot;value&quot;:&quot;Wearable&quot;}]</value>
+          <type>keyValueMap</type>
+        </property>
+        <property><name>showkeys</name><value>false</value><type>boolean</type></property>
+      </properties>
+    </datasource>
+    <datasource>
+      <type>key-value-list</type>
+      <id>cardSizeOptions</id>
+      <title>Product Card Sizes</title>
+      <interface>item</interface>
+      <properties>
+        <property>
+          <name>options</name>
+          <value>[{&quot;key&quot;:&quot;standard&quot;,&quot;value&quot;:&quot;Standard&quot;},{&quot;key&quot;:&quot;wide&quot;,&quot;value&quot;:&quot;Wide&quot;}]</value>
+          <type>keyValueMap</type>
+        </property>
+        <property><name>showkeys</name><value>false</value><type>boolean</type></property>
+      </properties>
+    </datasource>
+    <datasource>
+      <type>key-value-list</type>
+      <id>cardThemeOptions</id>
+      <title>Card Themes</title>
+      <interface>item</interface>
+      <properties>
+        <property>
+          <name>options</name>
+          <value>[{&quot;key&quot;:&quot;light&quot;,&quot;value&quot;:&quot;Light&quot;},{&quot;key&quot;:&quot;dark&quot;,&quot;value&quot;:&quot;Dark&quot;},{&quot;key&quot;:&quot;violet&quot;,&quot;value&quot;:&quot;Violet&quot;}]</value>
+          <type>keyValueMap</type>
+        </property>
+        <property><name>showkeys</name><value>false</value><type>boolean</type></property>
+      </properties>
+    </datasource>
+    <datasource>
+      <type>img-repository-upload</type>
+      <id>hONORExistingImages</id>
+      <title>HONOR Existing Images</title>
+      <interface>image</interface>
+      <properties>
+        <property><name>repoPath</name><value>/static-assets/app/honor/static/img/honor-clone</value><type>content-path-input</type></property>
+        <property><name>useSearch</name><value>false</value><type>boolean</type></property>
+      </properties>
+    </datasource>
+  </datasources>
+</form>

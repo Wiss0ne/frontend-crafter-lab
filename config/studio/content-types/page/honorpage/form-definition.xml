@@ -303,6 +303,233 @@
 				</field>
 			</fields>
 		</section>
+    <section>
+      <title>HONOR Homepage Content</title>
+      <description>Compose the homepage with reusable HONOR content cards.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>node-selector</type>
+          <id>featureCards_o</id>
+          <iceId></iceId>
+          <title>Featured Banners</title>
+          <description>Large campaign sections shown after the Hero.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>minSize</name><value>0</value><type>int</type></property>
+            <property><name>maxSize</name><value>3</value><type>int</type></property>
+            <property><name>itemManager</name><value>hONORContentCards</value><type>datasource:item</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>disableFlattening</name><value></value><type>boolean</type></property>
+            <property><name>useSingleValueFilename</name><value></value><type>boolean</type></property>
+            <property><name>useMVS</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>allowDuplicates</name><value><![CDATA[]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>productsEyebrow_s</id>
+          <iceId></iceId>
+          <title>Products Eyebrow</title>
+          <description></description>
+          <defaultValue>DISCOVER</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>productsTitle_t</id>
+          <iceId></iceId>
+          <title>Products Title</title>
+          <description></description>
+          <defaultValue>所有產品</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>node-selector</type>
+          <id>productCards_o</id>
+          <iceId></iceId>
+          <title>Product Cards</title>
+          <description>Cards displayed in the filterable product grid.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>minSize</name><value>0</value><type>int</type></property>
+            <property><name>maxSize</name><value>12</value><type>int</type></property>
+            <property><name>itemManager</name><value>hONORContentCards</value><type>datasource:item</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>disableFlattening</name><value></value><type>boolean</type></property>
+            <property><name>useSingleValueFilename</name><value></value><type>boolean</type></property>
+            <property><name>useMVS</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>allowDuplicates</name><value><![CDATA[]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>eventsEyebrow_s</id>
+          <iceId></iceId>
+          <title>Events Eyebrow</title>
+          <description></description>
+          <defaultValue>WHAT'S NEW</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>eventsTitle_t</id>
+          <iceId></iceId>
+          <title>Events Title</title>
+          <description></description>
+          <defaultValue>HONOR 最新活動</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>eventsLinkLabel_s</id>
+          <iceId></iceId>
+          <title>Events Link Label</title>
+          <description></description>
+          <defaultValue>查看全部</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>eventsLinkURL_s</id>
+          <iceId></iceId>
+          <title>Events Link URL</title>
+          <description></description>
+          <defaultValue>#honor-technology</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>node-selector</type>
+          <id>eventCards_o</id>
+          <iceId></iceId>
+          <title>Event Cards</title>
+          <description>Campaign and event cards.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>minSize</name><value>0</value><type>int</type></property>
+            <property><name>maxSize</name><value>6</value><type>int</type></property>
+            <property><name>itemManager</name><value>hONORContentCards</value><type>datasource:item</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>disableFlattening</name><value></value><type>boolean</type></property>
+            <property><name>useSingleValueFilename</name><value></value><type>boolean</type></property>
+            <property><name>useMVS</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>allowDuplicates</name><value><![CDATA[]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>technologyEyebrow_s</id>
+          <iceId></iceId>
+          <title>Technology Eyebrow</title>
+          <description></description>
+          <defaultValue>INNOVATION</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>technologyTitle_t</id>
+          <iceId></iceId>
+          <title>Technology Title</title>
+          <description></description>
+          <defaultValue>HONOR科技，引領未來</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>node-selector</type>
+          <id>technologyCards_o</id>
+          <iceId></iceId>
+          <title>Technology Cards</title>
+          <description>Innovation cards rendered in a two-column grid.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>minSize</name><value>0</value><type>int</type></property>
+            <property><name>maxSize</name><value>6</value><type>int</type></property>
+            <property><name>itemManager</name><value>hONORContentCards</value><type>datasource:item</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>disableFlattening</name><value></value><type>boolean</type></property>
+            <property><name>useSingleValueFilename</name><value></value><type>boolean</type></property>
+            <property><name>useMVS</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>allowDuplicates</name><value><![CDATA[]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+      </fields>
+    </section>
 	</sections>
 	<datasources>				<datasource>
 					<type>embedded-content</type>
@@ -317,5 +544,18 @@
 						</property>
 					</properties>
 				</datasource>
+        <datasource>
+          <type>embedded-content</type>
+          <id>hONORContentCards</id>
+          <title>HONOR Content Cards</title>
+          <interface>item</interface>
+          <properties>
+            <property>
+              <name>contentType</name>
+              <value>/component/honorcontentcard</value>
+              <type>string</type>
+            </property>
+          </properties>
+        </datasource>
 	</datasources>
 </form>

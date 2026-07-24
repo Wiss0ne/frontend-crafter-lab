@@ -104,6 +104,219 @@
 	<lastModifiedDate_dt>2026-07-24T03:48:45.606Z</lastModifiedDate_dt>
 </component>
 	</item></heroSlides_o>
+	<featureCards_o item-list="true">
+		<item datasource="hONORContentCards" inline="true">
+			<key>11000000-0000-0000-0000-000000000001</key>
+			<value>HONOR Magic8 Pro Feature</value>
+			<component id="11000000-0000-0000-0000-000000000001">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>1100</objectGroupId>
+				<objectId>11000000-0000-0000-0000-000000000001</objectId>
+				<file-name>11000000-0000-0000-0000-000000000001.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR Magic8 Pro Feature</internal-name>
+				<layoutPreset_s>feature-banner</layoutPreset_s>
+				<theme_s>light</theme_s>
+				<anchorId_s>honor-magic8</anchorId_s>
+				<eyebrow_s>AI FLAGSHIP</eyebrow_s>
+				<title_t>HONOR Magic8 Pro</title_t>
+				<tagline_t>AI｜視夜新視野</tagline_t>
+				<primaryImage_s>/static-assets/app/honor/static/img/honor-clone/featured-magic8-left.png</primaryImage_s>
+				<primaryImageAlt_s>HONOR Magic8 Pro 背面</primaryImageAlt_s>
+				<secondaryImage_s>/static-assets/app/honor/static/img/honor-clone/featured-magic8-right.png</secondaryImage_s>
+				<secondaryImageAlt_s>HONOR Magic8 Pro 正面</secondaryImageAlt_s>
+				<primaryButtonLabel_s>購買</primaryButtonLabel_s>
+				<primaryButtonURL_s>#honor-products</primaryButtonURL_s>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-products</secondaryButtonURL_s>
+			</component>
+		</item>
+	</featureCards_o>
+	<productsEyebrow_s>DISCOVER</productsEyebrow_s>
+	<productsTitle_t>所有產品</productsTitle_t>
+	<productCards_o item-list="true">
+		<item datasource="hONORContentCards" inline="true">
+			<key>21000000-0000-0000-0000-000000000001</key>
+			<value>HONOR Magic8 Pro Product</value>
+			<component id="21000000-0000-0000-0000-000000000001">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>2100</objectGroupId>
+				<objectId>21000000-0000-0000-0000-000000000001</objectId>
+				<file-name>21000000-0000-0000-0000-000000000001.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR Magic8 Pro Product</internal-name>
+				<layoutPreset_s>product-card</layoutPreset_s>
+				<category_s>phone</category_s>
+				<cardSize_s>wide</cardSize_s>
+				<theme_s>light</theme_s>
+				<eyebrow_s>Foldable Phone</eyebrow_s>
+				<title_t>HONOR Magic8 Pro</title_t>
+				<tagline_t>AI｜視夜新視野</tagline_t>
+				<primaryImage_s>/static-assets/app/honor/static/img/honor-clone/featured-magic8-right.png</primaryImage_s>
+				<primaryImageAlt_s>HONOR Magic8 Pro</primaryImageAlt_s>
+				<primaryButtonLabel_s>購買</primaryButtonLabel_s>
+				<primaryButtonURL_s>#honor-magic8</primaryButtonURL_s>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-magic8</secondaryButtonURL_s>
+			</component>
+		</item>
+		<item datasource="hONORContentCards" inline="true">
+			<key>22000000-0000-0000-0000-000000000002</key>
+			<value>HONOR MagicBook Art 14 Product</value>
+			<component id="22000000-0000-0000-0000-000000000002">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>2200</objectGroupId>
+				<objectId>22000000-0000-0000-0000-000000000002</objectId>
+				<file-name>22000000-0000-0000-0000-000000000002.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR MagicBook Art 14 Product</internal-name>
+				<layoutPreset_s>product-card</layoutPreset_s>
+				<category_s>laptop</category_s>
+				<cardSize_s>standard</cardSize_s>
+				<theme_s>light</theme_s>
+				<eyebrow_s>Laptop</eyebrow_s>
+				<title_t>HONOR MagicBook Art 14</title_t>
+				<tagline_t>輕薄機身，旗艦體驗</tagline_t>
+				<primaryImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magicbook.png</primaryImage_s>
+				<primaryImageAlt_s>HONOR MagicBook Art 14 2025</primaryImageAlt_s>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-technology</secondaryButtonURL_s>
+			</component>
+		</item>
+		<item datasource="hONORContentCards" inline="true">
+			<key>23000000-0000-0000-0000-000000000003</key>
+			<value>HONOR Watch 5 Ultra Product</value>
+			<component id="23000000-0000-0000-0000-000000000003">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>2300</objectGroupId>
+				<objectId>23000000-0000-0000-0000-000000000003</objectId>
+				<file-name>23000000-0000-0000-0000-000000000003.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR Watch 5 Ultra Product</internal-name>
+				<layoutPreset_s>product-card</layoutPreset_s>
+				<category_s>wearable</category_s>
+				<cardSize_s>standard</cardSize_s>
+				<theme_s>light</theme_s>
+				<eyebrow_s>Wearable</eyebrow_s>
+				<title_t>HONOR Watch 5 Ultra</title_t>
+				<tagline_t>優雅外觀，全天候健康管理</tagline_t>
+				<primaryImage_s>/static-assets/app/honor/static/img/honor-clone/hero-watch-5-ultra.png</primaryImage_s>
+				<primaryImageAlt_s>HONOR Watch 5 Ultra</primaryImageAlt_s>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-technology</secondaryButtonURL_s>
+			</component>
+		</item>
+		<item datasource="hONORContentCards" inline="true">
+			<key>24000000-0000-0000-0000-000000000004</key>
+			<value>HONOR MagicPad4 Product</value>
+			<component id="24000000-0000-0000-0000-000000000004">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>2400</objectGroupId>
+				<objectId>24000000-0000-0000-0000-000000000004</objectId>
+				<file-name>24000000-0000-0000-0000-000000000004.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR MagicPad4 Product</internal-name>
+				<layoutPreset_s>product-card</layoutPreset_s>
+				<category_s>tablet</category_s>
+				<cardSize_s>wide</cardSize_s>
+				<theme_s>violet</theme_s>
+				<eyebrow_s>Tablet</eyebrow_s>
+				<title_t>HONOR MagicPad4</title_t>
+				<tagline_t>沉浸視野，隨時釋放創意</tagline_t>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-technology</secondaryButtonURL_s>
+			</component>
+		</item>
+	</productCards_o>
+	<eventsEyebrow_s>WHAT'S NEW</eventsEyebrow_s>
+	<eventsTitle_t>HONOR 最新活動</eventsTitle_t>
+	<eventsLinkLabel_s>查看全部</eventsLinkLabel_s>
+	<eventsLinkURL_s>#honor-technology</eventsLinkURL_s>
+	<eventCards_o item-list="true">
+		<item datasource="hONORContentCards" inline="true">
+			<key>31000000-0000-0000-0000-000000000001</key>
+			<value>HONOR MWC 2026 Event</value>
+			<component id="31000000-0000-0000-0000-000000000001">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>3100</objectGroupId>
+				<objectId>31000000-0000-0000-0000-000000000001</objectId>
+				<file-name>31000000-0000-0000-0000-000000000001.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR MWC 2026 Event</internal-name>
+				<layoutPreset_s>event-orb</layoutPreset_s>
+				<theme_s>dark</theme_s>
+				<eyebrow_s>BARCELONA · 2026</eyebrow_s>
+				<title_t>HONOR MWC 2026</title_t>
+				<tagline_t>AI未來信徒</tagline_t>
+				<primaryButtonLabel_s>了解更多</primaryButtonLabel_s>
+				<primaryButtonURL_s>#honor-technology</primaryButtonURL_s>
+			</component>
+		</item>
+	</eventCards_o>
+	<technologyEyebrow_s>INNOVATION</technologyEyebrow_s>
+	<technologyTitle_t>HONOR科技，引領未來</technologyTitle_t>
+	<technologyCards_o item-list="true">
+		<item datasource="hONORContentCards" inline="true">
+			<key>41000000-0000-0000-0000-000000000001</key>
+			<value>HONOR Image Engine Technology</value>
+			<component id="41000000-0000-0000-0000-000000000001">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>4100</objectGroupId>
+				<objectId>41000000-0000-0000-0000-000000000001</objectId>
+				<file-name>41000000-0000-0000-0000-000000000001.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR Image Engine Technology</internal-name>
+				<layoutPreset_s>technology-camera</layoutPreset_s>
+				<theme_s>dark</theme_s>
+				<eyebrow_s>HONOR IMAGE ENGINE</eyebrow_s>
+				<title_t>以 AI 重塑影像</title_t>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-main</secondaryButtonURL_s>
+			</component>
+		</item>
+		<item datasource="hONORContentCards" inline="true">
+			<key>42000000-0000-0000-0000-000000000002</key>
+			<value>HONOR AI Technology</value>
+			<component id="42000000-0000-0000-0000-000000000002">
+				<content-type>/component/honorcontentcard</content-type>
+				<display-template>/templates/web/honor-content-card.ftl</display-template>
+				<no-template-required/>
+				<merge-strategy>inherit-levels</merge-strategy>
+				<objectGroupId>4200</objectGroupId>
+				<objectId>42000000-0000-0000-0000-000000000002</objectId>
+				<file-name>42000000-0000-0000-0000-000000000002.xml</file-name>
+				<folder-name/>
+				<internal-name>HONOR AI Technology</internal-name>
+				<layoutPreset_s>technology-ai</layoutPreset_s>
+				<theme_s>light</theme_s>
+				<eyebrow_s>HONOR AI</eyebrow_s>
+				<title_t>讓智慧自然融入生活</title_t>
+				<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+				<secondaryButtonURL_s>#honor-main</secondaryButtonURL_s>
+			</component>
+		</item>
+	</technologyCards_o>
 	<sEODescription_t>HONOR 香港首頁</sEODescription_t>
 	<createdDate>2026-07-23T09:51:15.738Z</createdDate>
 	<createdDate_dt>2026-07-23T09:51:15.738Z</createdDate_dt>
