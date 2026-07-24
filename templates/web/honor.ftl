@@ -22,7 +22,7 @@
 
   <link
     rel="stylesheet"
-    href="/static-assets/app/honor/css/honor-clone.cc6696d8.css"
+    href="/static-assets/app/honor/css/honor-clone.css"
   >
 </head>
 
@@ -87,7 +87,7 @@
     </section>
   </main>
 
-  <script src="/static-assets/app/honor/js/honor-clone.2546e48d.js"></script>
+  <script src="/static-assets/app/honor/js/honor-clone.js"></script>
 
   <@crafter.body_bottom />
 </body>
