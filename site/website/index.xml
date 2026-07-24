@@ -156,7 +156,7 @@
       <component id="22000000-0000-0000-0000-000000000002">
         <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
         <objectGroupId>2200</objectGroupId><objectId>22000000-0000-0000-0000-000000000002</objectId><file-name>22000000-0000-0000-0000-000000000002.xml</file-name><folder-name/>
-        <internal-name>HONOR MagicBook Art 14 2025 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>laptop</category_s><cardSize_s>standard</cardSize_s><theme_s>light</theme_s>
+        <internal-name>HONOR MagicBook Art 14 2025 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>laptop</category_s><cardSize_s>wide</cardSize_s><theme_s>light</theme_s>
         <eyebrow_s>手提電腦</eyebrow_s><title_t>HONOR MagicBook Art 14 2025</title_t>
         <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-magicbook-art-14-2025.webp</primaryImage_s><primaryImageAlt_s>HONOR MagicBook Art 14 2025</primaryImageAlt_s>
         <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/laptops/honor-magicbook-art-14-2025/</secondaryButtonURL_s>
