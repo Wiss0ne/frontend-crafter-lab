@@ -41,10 +41,66 @@
 	<lastModifiedDate>2026-07-24T03:40:18.039Z</lastModifiedDate>
 	<lastModifiedDate_dt>2026-07-24T03:40:18.039Z</lastModifiedDate_dt>
 </component>
+	</item>	<item datasource="hONORHeroSlides" inline="true">	<key>914609f1-6bdc-29b4-864f-ea0ef0006112</key>
+	<value>HONOR Magic V6 Hero</value>
+<component id="914609f1-6bdc-29b4-864f-ea0ef0006112">
+	<content-type>/component/honorheroslide</content-type>
+	<display-template>/templates/web/honor-hero-slide.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>9146</objectGroupId>
+	<objectId>914609f1-6bdc-29b4-864f-ea0ef0006112</objectId>
+	<file-name>914609f1-6bdc-29b4-864f-ea0ef0006112.xml</file-name>
+	<folder-name/>
+	<internal-name>HONOR Magic V6 Hero</internal-name>
+	<eyebrow_s>ULTRA THIN FOLDABLE</eyebrow_s>
+	<title_t>HONOR Magic V6</title_t>
+	<tagline_t>纖薄折疊，旗艦性能</tagline_t>
+	<primaryButtonLabel_s>購買</primaryButtonLabel_s>
+	<primaryButtonURL_s>#</primaryButtonURL_s>
+	<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+	<secondaryButtonURL_s>#</secondaryButtonURL_s>
+	<layout_s>full</layout_s>
+	<theme_s>dark</theme_s>
+	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6.png</desktopImage_s>
+	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6-mobile.png</mobileImage_s>
+	<createdDate>2026-07-24T03:47:21.281Z</createdDate>
+	<createdDate_dt>2026-07-24T03:47:21.281Z</createdDate_dt>
+	<lastModifiedDate>2026-07-24T03:47:21.281Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-24T03:47:21.281Z</lastModifiedDate_dt>
+</component>
+	</item>	<item datasource="hONORHeroSlides" inline="true">	<key>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c</key>
+	<value>HONOR Watch 5 Ultra Hero</value>
+<component id="f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c">
+	<content-type>/component/honorheroslide</content-type>
+	<display-template>/templates/web/honor-hero-slide.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>f641</objectGroupId>
+	<objectId>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c</objectId>
+	<file-name>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c.xml</file-name>
+	<folder-name/>
+	<internal-name>HONOR Watch 5 Ultra Hero</internal-name>
+	<eyebrow_s>PREMIUM WEARABLE</eyebrow_s>
+	<title_t>HONOR Watch 5 Ultra</title_t>
+	<tagline_t>典藏設計，全天候健康守護</tagline_t>
+	<primaryButtonLabel_s>購買</primaryButtonLabel_s>
+	<primaryButtonURL_s>#</primaryButtonURL_s>
+	<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
+	<secondaryButtonURL_s>#</secondaryButtonURL_s>
+	<layout_s>full</layout_s>
+	<theme_s>light</theme_s>
+	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-watch-5-ultra.png</desktopImage_s>
+	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-watch-5-ultra-mobile.png</mobileImage_s>
+	<createdDate>2026-07-24T03:48:45.606Z</createdDate>
+	<createdDate_dt>2026-07-24T03:48:45.606Z</createdDate_dt>
+	<lastModifiedDate>2026-07-24T03:48:45.606Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-24T03:48:45.606Z</lastModifiedDate_dt>
+</component>
 	</item></heroSlides_o>
 	<sEODescription_t>HONOR 香港首頁</sEODescription_t>
 	<createdDate>2026-07-23T09:51:15.738Z</createdDate>
 	<createdDate_dt>2026-07-23T09:51:15.738Z</createdDate_dt>
-	<lastModifiedDate>2026-07-24T03:40:00.935Z</lastModifiedDate>
-	<lastModifiedDate_dt>2026-07-24T03:40:00.935Z</lastModifiedDate_dt>
+	<lastModifiedDate>2026-07-24T03:47:11.964Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-24T03:47:11.964Z</lastModifiedDate_dt>
 </page>
