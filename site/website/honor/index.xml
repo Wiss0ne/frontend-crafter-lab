@@ -61,13 +61,13 @@
 	<secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s>
 	<secondaryButtonURL_s>#</secondaryButtonURL_s>
 	<layout_s>full</layout_s>
-	<theme_s>dark</theme_s>
+	<theme_s>light</theme_s>
 	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6.png</desktopImage_s>
 	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6-mobile.png</mobileImage_s>
 	<createdDate>2026-07-24T03:47:21.281Z</createdDate>
 	<createdDate_dt>2026-07-24T03:47:21.281Z</createdDate_dt>
-	<lastModifiedDate>2026-07-24T03:47:21.281Z</lastModifiedDate>
-	<lastModifiedDate_dt>2026-07-24T03:47:21.281Z</lastModifiedDate_dt>
+	<lastModifiedDate>2026-07-24T03:50:36.124Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-24T03:50:36.124Z</lastModifiedDate_dt>
 </component>
 	</item>	<item datasource="hONORHeroSlides" inline="true">	<key>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c</key>
 	<value>HONOR Watch 5 Ultra Hero</value>
@@ -101,6 +101,6 @@
 	<sEODescription_t>HONOR 香港首頁</sEODescription_t>
 	<createdDate>2026-07-23T09:51:15.738Z</createdDate>
 	<createdDate_dt>2026-07-23T09:51:15.738Z</createdDate_dt>
-	<lastModifiedDate>2026-07-24T03:47:11.964Z</lastModifiedDate>
-	<lastModifiedDate_dt>2026-07-24T03:47:11.964Z</lastModifiedDate_dt>
+	<lastModifiedDate>2026-07-24T03:50:21.890Z</lastModifiedDate>
+	<lastModifiedDate_dt>2026-07-24T03:50:21.890Z</lastModifiedDate_dt>
 </page>
