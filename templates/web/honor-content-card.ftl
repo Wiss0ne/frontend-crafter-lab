@@ -98,7 +98,7 @@
     <#break>
 
   <#default>
-    <#assign isWide = contentModel.cardSize_s!'standard' == 'wide'>
+    <#assign isWide = (contentModel.cardSize_s!'standard') == 'wide'>
     <article
       class="honor-product-card<#if isWide> honor-product-card--wide</#if><#if theme == 'violet'> honor-product-card--violet</#if>"
       data-product-category="${contentModel.category_s!'all'}"
