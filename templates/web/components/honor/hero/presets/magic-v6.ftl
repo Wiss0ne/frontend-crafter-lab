@@ -1,0 +1,3 @@
+<@heroPicture />
+<@heroHiddenTitle />
+<@heroActions />

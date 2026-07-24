@@ -1,11 +1,19 @@
-<#assign layout = contentModel.layout_s!''>
-<#if !layout?has_content>
-  <#assign layout = 'full'>
-</#if>
+<#assign layoutPreset = contentModel.layoutPreset_s!''>
+<#if !layoutPreset?has_content>
+  <#assign legacyContentMode = contentModel.contentMode_s!''>
+  <#assign legacyName = (contentModel["internal-name"]!'')?lower_case>
 
-<#assign contentMode = contentModel.contentMode_s!''>
-<#if !contentMode?has_content>
-  <#assign contentMode = 'overlay'>
+  <#if legacyContentMode == 'image-only'>
+    <#assign layoutPreset = 'image-only'>
+  <#elseif legacyName?contains('magic v6')>
+    <#assign layoutPreset = 'magic-v6'>
+  <#elseif legacyName?contains('magic v5')>
+    <#assign layoutPreset = 'magic-v5'>
+  <#elseif legacyName?contains('watch 5 ultra')>
+    <#assign layoutPreset = 'watch-5-ultra'>
+  <#else>
+    <#assign layoutPreset = 'generic-left'>
+  </#if>
 </#if>
 
 <#assign theme = contentModel.theme_s!''>
@@ -13,76 +21,12 @@
   <#assign theme = 'light'>
 </#if>
 
-<#assign desktopContentAlign = contentModel.desktopContentAlign_s!''>
-<#if !desktopContentAlign?has_content>
-  <#assign desktopContentAlign = 'left'>
-</#if>
-
-<#assign mobileContentAlign = contentModel.mobileContentAlign_s!''>
-<#if !mobileContentAlign?has_content>
-  <#assign mobileContentAlign = 'center'>
-</#if>
-
 <#assign showButtons = contentModel.showButtons_b!true>
-<#assign customButtonPosition = contentModel.customButtonPosition_b!false>
 <#assign hasPrimaryButton = (contentModel.primaryButtonLabel_s!'')?has_content>
 <#assign hasSecondaryButton = (contentModel.secondaryButtonLabel_s!'')?has_content>
 <#assign hasButtons = showButtons && (hasPrimaryButton || hasSecondaryButton)>
-<#assign renderCustomButtons = hasButtons && (customButtonPosition || contentMode == 'image-only')>
 
-<#macro heroActions custom=false>
-  <div
-    class="honor-hero-slide__actions<#if custom> honor-hero-slide__actions--custom</#if>"
-  >
-    <#if hasPrimaryButton>
-      <a
-        class="honor-button <#if theme == 'dark'>honor-button--light<#else>honor-button--dark</#if>"
-        href="${contentModel.primaryButtonURL_s!'#'}"
-      >
-        ${contentModel.primaryButtonLabel_s}
-      </a>
-    </#if>
-
-    <#if hasSecondaryButton>
-      <a
-        class="honor-text-link<#if theme == 'dark'> honor-text-link--light</#if>"
-        href="${contentModel.secondaryButtonURL_s!'#'}"
-      >
-        ${contentModel.secondaryButtonLabel_s}
-      </a>
-    </#if>
-  </div>
-</#macro>
-
-<article
-  class="
-    honor-hero-slide
-    honor-hero-slide--${layout}
-    honor-hero-slide--${theme}
-    honor-hero-slide--${contentMode}
-    <#if isActive?? && isActive>is-active</#if>
-  "
-  style="
-    --hero-content-x: ${contentModel.desktopContentX_f!8}%;
-    --hero-content-y: ${contentModel.desktopContentY_f!14}%;
-    --hero-content-offset-x: ${contentModel.desktopContentOffsetX_i!0}px;
-    --hero-content-offset-y: ${contentModel.desktopContentOffsetY_i!0}px;
-    --hero-mobile-content-x: ${contentModel.mobileContentX_f!50}%;
-    --hero-mobile-content-y: ${contentModel.mobileContentY_f!8}%;
-    --hero-mobile-content-offset-x: ${contentModel.mobileContentOffsetX_i!0}px;
-    --hero-mobile-content-offset-y: ${contentModel.mobileContentOffsetY_i!0}px;
-    --hero-button-x: ${contentModel.desktopButtonX_f!50}%;
-    --hero-button-y: ${contentModel.desktopButtonY_f!82}%;
-    --hero-button-offset-x: ${contentModel.desktopButtonOffsetX_i!0}px;
-    --hero-button-offset-y: ${contentModel.desktopButtonOffsetY_i!0}px;
-    --hero-mobile-button-x: ${contentModel.mobileButtonX_f!50}%;
-    --hero-mobile-button-y: ${contentModel.mobileButtonY_f!82}%;
-    --hero-mobile-button-offset-x: ${contentModel.mobileButtonOffsetX_i!0}px;
-    --hero-mobile-button-offset-y: ${contentModel.mobileButtonOffsetY_i!0}px;
-  "
-  data-hero-slide
-  aria-hidden="<#if isActive?? && isActive>false<#else>true</#if>"
->
+<#macro heroPicture>
   <picture class="honor-hero-slide__picture">
     <#if (contentModel.mobileImage_s!'')?has_content>
       <source
@@ -99,39 +43,80 @@
       >
     </#if>
   </picture>
+</#macro>
 
-  <#if contentMode == 'overlay'>
-    <div
-      class="
-        honor-hero-slide__content
-        honor-hero-slide__content--${theme}
-        honor-hero-slide__content--desktop-${desktopContentAlign}
-        honor-hero-slide__content--mobile-${mobileContentAlign}
-      "
-    >
-      <#if (contentModel.eyebrow_s!'')?has_content>
-        <p class="honor-eyebrow">
-          ${contentModel.eyebrow_s}
-        </p>
+<#macro heroActions>
+  <#if hasButtons>
+    <div class="honor-hero-slide__actions">
+      <#if hasPrimaryButton>
+        <a
+          class="honor-button <#if theme == 'dark'>honor-button--light<#else>honor-button--dark</#if>"
+          href="${contentModel.primaryButtonURL_s!'#'}"
+        >
+          ${contentModel.primaryButtonLabel_s}
+        </a>
       </#if>
 
-      <h2>${contentModel.title_t!''}</h2>
-
-      <#if (contentModel.tagline_t!'')?has_content>
-        <p class="honor-hero-slide__tagline">
-          ${contentModel.tagline_t}
-        </p>
-      </#if>
-
-      <#if hasButtons && !customButtonPosition>
-        <@heroActions />
+      <#if hasSecondaryButton>
+        <a
+          class="honor-text-link<#if theme == 'dark'> honor-text-link--light</#if>"
+          href="${contentModel.secondaryButtonURL_s!'#'}"
+        >
+          ${contentModel.secondaryButtonLabel_s}
+        </a>
       </#if>
     </div>
-  <#elseif (contentModel.title_t!'')?has_content>
-    <h2 class="honor-visually-hidden">${contentModel.title_t}</h2>
+  </#if>
+</#macro>
+
+<#macro heroCopy>
+  <#if (contentModel.eyebrow_s!'')?has_content>
+    <p class="honor-eyebrow">${contentModel.eyebrow_s}</p>
   </#if>
 
-  <#if renderCustomButtons>
-    <@heroActions custom=true />
+  <#if (contentModel.title_t!'')?has_content>
+    <h2>${contentModel.title_t}</h2>
   </#if>
+
+  <#if (contentModel.tagline_t!'')?has_content>
+    <p class="honor-hero-slide__tagline">${contentModel.tagline_t}</p>
+  </#if>
+
+  <@heroActions />
+</#macro>
+
+<#macro heroHiddenTitle>
+  <#if (contentModel.title_t!'')?has_content>
+    <h2 class="honor-visually-hidden">${contentModel.title_t}</h2>
+  </#if>
+</#macro>
+
+<article
+  class="
+    honor-hero-slide
+    honor-hero-slide--full
+    honor-hero-slide--${theme}
+    honor-hero-slide--preset-${layoutPreset}
+    <#if isActive?? && isActive>is-active</#if>
+  "
+  data-hero-slide
+  data-hero-preset="${layoutPreset}"
+  aria-hidden="<#if isActive?? && isActive>false<#else>true</#if>"
+>
+  <#switch layoutPreset>
+    <#case 'magic-v5'>
+      <#include "/templates/web/components/honor/hero/presets/magic-v5.ftl">
+      <#break>
+    <#case 'magic-v6'>
+      <#include "/templates/web/components/honor/hero/presets/magic-v6.ftl">
+      <#break>
+    <#case 'watch-5-ultra'>
+      <#include "/templates/web/components/honor/hero/presets/watch-5-ultra.ftl">
+      <#break>
+    <#case 'image-only'>
+      <#include "/templates/web/components/honor/hero/presets/image-only.ftl">
+      <#break>
+    <#default>
+      <#include "/templates/web/components/honor/hero/presets/generic.ftl">
+  </#switch>
 </article>

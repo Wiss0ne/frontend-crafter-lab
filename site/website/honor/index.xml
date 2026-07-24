@@ -24,8 +24,10 @@
 	<objectId>0c8f6506-bd48-edfa-5477-ffbacc21c18d</objectId>
 	<file-name>0c8f6506-bd48-edfa-5477-ffbacc21c18d.xml</file-name>
 	<folder-name/>
+	<layoutPreset_s>magic-v5</layoutPreset_s>
 	<layout_s>full</layout_s>
 	<theme_s>dark</theme_s>
+	<showButtons_b>true</showButtons_b>
 	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v5.png</desktopImage_s>
 	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v5-mobile.png</mobileImage_s>
 	<internal-name>HONOR Magic V5 Hero</internal-name>
@@ -52,6 +54,7 @@
 	<objectId>914609f1-6bdc-29b4-864f-ea0ef0006112</objectId>
 	<file-name>914609f1-6bdc-29b4-864f-ea0ef0006112.xml</file-name>
 	<folder-name/>
+	<layoutPreset_s>magic-v6</layoutPreset_s>
 	<internal-name>HONOR Magic V6 Hero</internal-name>
 	<eyebrow_s>ULTRA THIN FOLDABLE</eyebrow_s>
 	<title_t>HONOR Magic V6</title_t>
@@ -62,6 +65,7 @@
 	<secondaryButtonURL_s>#</secondaryButtonURL_s>
 	<layout_s>full</layout_s>
 	<theme_s>light</theme_s>
+	<showButtons_b>true</showButtons_b>
 	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6.png</desktopImage_s>
 	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magic-v6-mobile.png</mobileImage_s>
 	<createdDate>2026-07-24T03:47:21.281Z</createdDate>
@@ -80,6 +84,7 @@
 	<objectId>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c</objectId>
 	<file-name>f641d637-f5b2-f3b9-43f3-1ba2d33e8f4c.xml</file-name>
 	<folder-name/>
+	<layoutPreset_s>watch-5-ultra</layoutPreset_s>
 	<internal-name>HONOR Watch 5 Ultra Hero</internal-name>
 	<eyebrow_s>PREMIUM WEARABLE</eyebrow_s>
 	<title_t>HONOR Watch 5 Ultra</title_t>
@@ -90,6 +95,7 @@
 	<secondaryButtonURL_s>#</secondaryButtonURL_s>
 	<layout_s>full</layout_s>
 	<theme_s>light</theme_s>
+	<showButtons_b>true</showButtons_b>
 	<desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-watch-5-ultra.png</desktopImage_s>
 	<mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-watch-5-ultra-mobile.png</mobileImage_s>
 	<createdDate>2026-07-24T03:48:45.606Z</createdDate>
