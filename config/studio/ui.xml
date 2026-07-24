@@ -42,24 +42,6 @@
 				</widget>
 				<widget id="craftercms.components.PathNavigatorTree">
 					<configuration>
-						<id>Components</id>
-						<label>Components</label>
-						<icon id="craftercms.icons.Component"/>
-						<rootPath>/site/components</rootPath>
-						<locale>en</locale>
-					</configuration>
-				</widget>
-				<widget id="craftercms.components.PathNavigatorTree">
-					<configuration>
-						<id>Taxonomy</id>
-						<label>Taxonomy</label>
-						<icon id="@mui/icons-material/LocalOfferOutlined"/>
-						<rootPath>/site/taxonomy</rootPath>
-						<locale>en</locale>
-					</configuration>
-				</widget>
-				<widget id="craftercms.components.PathNavigatorTree">
-					<configuration>
 						<id>StaticAssets</id>
 						<label>Static Assets</label>
 						<icon id="@mui/icons-material/ImageOutlined"/>
@@ -72,14 +54,6 @@
 						<label>Templates</label>
 						<icon id="@mui/icons-material/InsertDriveFileOutlined"/>
 						<rootPath>/templates</rootPath>
-						<locale>en</locale>
-					</configuration>
-				</widget>
-				<widget id="craftercms.components.PathNavigatorTree">
-					<configuration>
-						<label>Scripts</label>
-						<icon id="@mui/icons-material/CodeRounded"/>
-						<rootPath>/scripts</rootPath>
 						<locale>en</locale>
 					</configuration>
 				</widget>

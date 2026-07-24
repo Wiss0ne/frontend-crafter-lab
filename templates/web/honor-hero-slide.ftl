@@ -1,3 +1,5 @@
+<#ftl output_format="HTML" auto_esc=true>
+<#import "/templates/web/components/honor/url-utils.ftl" as honorUrl />
 <#assign layoutPreset = contentModel.layoutPreset_s!''>
 <#if !layoutPreset?has_content>
   <#assign legacyContentMode = contentModel.contentMode_s!''>
@@ -31,14 +33,14 @@
     <#if (contentModel.mobileImage_s!'')?has_content>
       <source
         media="(max-width: 820px)"
-        srcset="${contentModel.mobileImage_s}"
+        srcset="${honorUrl.safe(contentModel.mobileImage_s)}"
       >
     </#if>
 
     <#if (contentModel.desktopImage_s!'')?has_content>
       <img
         class="honor-hero-slide__visual"
-        src="${contentModel.desktopImage_s}"
+        src="${honorUrl.safe(contentModel.desktopImage_s)}"
         alt="${contentModel.title_t!''}"
       >
     </#if>
@@ -51,7 +53,7 @@
       <#if hasPrimaryButton>
         <a
           class="honor-button <#if theme == 'dark'>honor-button--light<#else>honor-button--dark</#if>"
-          href="${contentModel.primaryButtonURL_s!'#'}"
+          href="${honorUrl.safe(contentModel.primaryButtonURL_s!'#')}"
         >
           ${contentModel.primaryButtonLabel_s}
         </a>
@@ -60,7 +62,7 @@
       <#if hasSecondaryButton>
         <a
           class="honor-text-link<#if theme == 'dark'> honor-text-link--light</#if>"
-          href="${contentModel.secondaryButtonURL_s!'#'}"
+          href="${honorUrl.safe(contentModel.secondaryButtonURL_s!'#')}"
         >
           ${contentModel.secondaryButtonLabel_s}
         </a>

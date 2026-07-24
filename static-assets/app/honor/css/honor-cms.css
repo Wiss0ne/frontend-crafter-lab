@@ -11,6 +11,25 @@
   gap: 18px;
 }
 
+.honor-error-page {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 18px;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.honor-error-page img {
+  width: min(220px, 58vw);
+}
+
+.honor-error-page h1,
+.honor-error-page p {
+  margin: 0;
+}
+
 @media (max-width: 820px) {
   .honor-content-card__actions {
     gap: 16px;

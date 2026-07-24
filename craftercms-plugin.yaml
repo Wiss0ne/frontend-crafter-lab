@@ -6,48 +6,29 @@ descriptorVersion: 2
 # Describe the blueprint
 plugin:
   type: blueprint
-  id: org.craftercms.blueprint.editorial
-  name: Website Editorial Blueprint
+  id: com.example.blueprint.honor
+  name: HONOR Homepage Blueprint
   tags:
     - blueprint
     - website
-    - editorial
+    - honor
   version:
     major: 1
-    minor: 0
-    patch: 1
+    minor: 1
+    patch: 0
   description: |
-    Editorial blueprint
+    HONOR Hong Kong homepage blueprint with CMS-managed hero, product, event and technology components.
   website:
-    name: Website Editorial Blueprint
-    url: https://craftercms.com
+    name: HONOR Homepage Blueprint
+    url: https://www.honor.com/hk/
   media:
-    screenshots:
-      - title: Home Page
-        description: Screenshot of the home page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_home.png
-      - title: Style Page
-        description: Screenshot of the style page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_style.png
-      - title: Health Page
-        description: Screenshot of the health page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_health.png
-      - title: Entertainment Page
-        description: Screenshot of the entertainment page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_entertainment.png
-      - title: Technology Page
-        description: Screenshot of the technology page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_technology.png
-      - title: Article Page
-        description: Screenshot of the article page
-        url: /studio/static-assets/images/blueprints/website_editorial/bp_editorial_article.png
+    screenshots: []
   developer:
     company:
-      name: CrafterCMS
-      email: info@craftercms.com
-      url: https://craftercms.com/
+      name: Local Development Team
+      url: https://www.honor.com/hk/
   license:
-    name: MIT
+    name: MIT (code only; third-party assets excluded)
     url: https://opensource.org/licenses/MIT
   crafterCmsVersions:
     - major: 4

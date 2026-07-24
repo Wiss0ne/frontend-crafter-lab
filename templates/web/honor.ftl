@@ -1,4 +1,6 @@
+<#ftl output_format="HTML" auto_esc=true>
 <#import "/templates/system/common/crafter.ftl" as crafter />
+<#import "/templates/web/components/honor/url-utils.ftl" as honorUrl />
 
 <!DOCTYPE html>
 <html lang="zh-HK">
@@ -154,6 +156,7 @@
           <button type="button" role="tab" aria-pressed="false" data-product-filter="laptop">手提電腦</button>
           <button type="button" role="tab" aria-pressed="false" data-product-filter="tablet">平板</button>
           <button type="button" role="tab" aria-pressed="false" data-product-filter="wearable">穿戴</button>
+          <button type="button" role="tab" aria-pressed="false" data-product-filter="audio">音響</button>
         </div>
 
         <div class="honor-product-grid" aria-live="polite">
@@ -172,7 +175,7 @@
             <h2>${contentModel.eventsTitle_t!'HONOR 最新活動'}</h2>
           </div>
           <#if (contentModel.eventsLinkLabel_s!'')?has_content>
-            <a class="honor-text-link" href="${contentModel.eventsLinkURL_s!'#honor-technology'}">
+            <a class="honor-text-link" href="${honorUrl.safe(contentModel.eventsLinkURL_s!'#honor-technology')}">
               ${contentModel.eventsLinkLabel_s} <span>›</span>
             </a>
           </#if>

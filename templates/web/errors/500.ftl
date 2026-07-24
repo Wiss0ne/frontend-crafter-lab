@@ -1,41 +1,24 @@
-<html lang="en">
-	<head>
-		<title>Editorial</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="/static-assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="/static-assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="/static-assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="/static-assets/css/ie8.css" /><![endif]-->
-		<link rel="stylesheet" href="/static-assets/css/jquery-ui.min.css" />
-	</head>
-	<body>
-    	<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-                            <!-- Header -->
-							<@renderComponent componentPath="/site/components/headers/header.xml" />
-
-                            <!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header><h1>There was an error, please contact your site administrator.</h1></header>
-										Go back <a href="/">home</a>
-									</div>
-								</section>
-                        </div>
-                    </div>
-             </div>
-             <!-- Scripts -->
-			<script src="/static-assets/js/jquery.min.js"></script>
-			<script src="/static-assets/js/jquery-ui.min.js"></script>
-			<script src="/static-assets/js/skel.min.js"></script>
-			<script src="/static-assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/static-assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static-assets/js/main.js"></script>
-    </body>
+<#ftl output_format="HTML" auto_esc=true>
+<#import "/templates/system/common/crafter.ftl" as crafter />
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服務暫時不可用 | HONOR</title>
+  <@crafter.head />
+  <link rel="stylesheet" href="/static-assets/app/honor/css/honor-clone.css">
+  <link rel="stylesheet" href="/static-assets/app/honor/css/honor-cms.css">
+</head>
+<body class="honor-clone-body">
+  <@crafter.body_top />
+  <main class="honor-error-page">
+    <img src="/static-assets/app/honor/static/img/honor-clone/honor-logo.svg" alt="HONOR">
+    <p class="honor-eyebrow">ERROR 500</p>
+    <h1>服務暫時不可用</h1>
+    <p>網站暫時未能完成請求，請稍後再試。</p>
+    <a class="honor-button honor-button--dark" href="/">返回 HONOR 首頁</a>
+  </main>
+  <@crafter.body_bottom />
+</body>
 </html>

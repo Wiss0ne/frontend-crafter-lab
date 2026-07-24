@@ -1,3 +1,5 @@
+<#ftl output_format="HTML" auto_esc=true>
+<#import "/templates/web/components/honor/url-utils.ftl" as honorUrl />
 <#-- HONOR marketing content card; layout is selected by a code-owned preset. -->
 <#assign preset = contentModel.layoutPreset_s!'product-standard'>
 <#assign theme = contentModel.theme_s!'light'>
@@ -12,13 +14,13 @@
       <#if hasPrimaryAction>
         <a
           class="honor-button <#if light>honor-button--light<#else>honor-button--dark</#if>"
-          href="${contentModel.primaryButtonURL_s!'#'}"
+          href="${honorUrl.safe(contentModel.primaryButtonURL_s!'#')}"
         >${contentModel.primaryButtonLabel_s}</a>
       </#if>
       <#if hasSecondaryAction>
         <a
           class="honor-text-link<#if light> honor-text-link--light</#if>"
-          href="${contentModel.secondaryButtonURL_s!'#'}"
+          href="${honorUrl.safe(contentModel.secondaryButtonURL_s!'#')}"
         >${contentModel.secondaryButtonLabel_s} <span>›</span></a>
       </#if>
     </div>
@@ -41,14 +43,14 @@
       <#if primaryImage?has_content>
         <img
           class="honor-magic8__phone honor-magic8__phone--left"
-          src="${primaryImage}"
+          src="${honorUrl.safe(primaryImage)}"
           alt="${(contentModel.primaryImageAlt_s)!(contentModel.title_t!'')}"
         >
       </#if>
       <#if secondaryImage?has_content>
         <img
           class="honor-magic8__phone honor-magic8__phone--right"
-          src="${secondaryImage}"
+          src="${honorUrl.safe(secondaryImage)}"
           alt="${(contentModel.secondaryImageAlt_s)!(contentModel.title_t!'')}"
         >
       </#if>
@@ -116,7 +118,7 @@
       <#if primaryImage?has_content>
         <img
           <#if isWide>class="honor-product-card__phone"</#if>
-          src="${primaryImage}"
+          src="${honorUrl.safe(primaryImage)}"
           alt="${(contentModel.primaryImageAlt_s)!(contentModel.title_t!'')}"
         >
       <#elseif theme == 'violet'>

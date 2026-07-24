@@ -369,7 +369,7 @@
       <properties>
         <property>
           <name>options</name>
-          <value>[{&quot;key&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;Phone&quot;},{&quot;key&quot;:&quot;laptop&quot;,&quot;value&quot;:&quot;Laptop&quot;},{&quot;key&quot;:&quot;tablet&quot;,&quot;value&quot;:&quot;Tablet&quot;},{&quot;key&quot;:&quot;wearable&quot;,&quot;value&quot;:&quot;Wearable&quot;}]</value>
+          <value>[{&quot;key&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;Phone&quot;},{&quot;key&quot;:&quot;laptop&quot;,&quot;value&quot;:&quot;Laptop&quot;},{&quot;key&quot;:&quot;tablet&quot;,&quot;value&quot;:&quot;Tablet&quot;},{&quot;key&quot;:&quot;wearable&quot;,&quot;value&quot;:&quot;Wearable&quot;},{&quot;key&quot;:&quot;audio&quot;,&quot;value&quot;:&quot;Audio&quot;}]</value>
           <type>keyValueMap</type>
         </property>
         <property><name>showkeys</name><value>false</value><type>boolean</type></property>
