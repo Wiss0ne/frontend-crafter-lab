@@ -634,7 +634,7 @@
 				<properties>
 					<property>
 						<name>options</name>
-						<value>[{&quot;key&quot;:&quot;generic-left&quot;,&quot;value&quot;:&quot;Generic - Text Left&quot;},{&quot;key&quot;:&quot;generic-center&quot;,&quot;value&quot;:&quot;Generic - Text Center&quot;},{&quot;key&quot;:&quot;generic-right&quot;,&quot;value&quot;:&quot;Generic - Text Right&quot;},{&quot;key&quot;:&quot;magic-v5&quot;,&quot;value&quot;:&quot;Product - HONOR Magic V5&quot;},{&quot;key&quot;:&quot;magic-v6&quot;,&quot;value&quot;:&quot;Product - HONOR Magic V6&quot;},{&quot;key&quot;:&quot;watch-5-ultra&quot;,&quot;value&quot;:&quot;Product - HONOR Watch 5 Ultra&quot;},{&quot;key&quot;:&quot;image-only&quot;,&quot;value&quot;:&quot;Campaign - Image Only&quot;}]</value>
+							<value>[{&quot;key&quot;:&quot;generic-left&quot;,&quot;value&quot;:&quot;Generic - Text Left&quot;},{&quot;key&quot;:&quot;generic-center&quot;,&quot;value&quot;:&quot;Generic - Text Center&quot;},{&quot;key&quot;:&quot;generic-right&quot;,&quot;value&quot;:&quot;Generic - Text Right&quot;},{&quot;key&quot;:&quot;magic-v5&quot;,&quot;value&quot;:&quot;Product - HONOR Magic V5&quot;},{&quot;key&quot;:&quot;magic-v6&quot;,&quot;value&quot;:&quot;Product - HONOR Magic V6&quot;},{&quot;key&quot;:&quot;magicbook-art&quot;,&quot;value&quot;:&quot;Product - HONOR MagicBook Art&quot;},{&quot;key&quot;:&quot;watch-5-ultra&quot;,&quot;value&quot;:&quot;Product - HONOR Watch 5 Ultra&quot;},{&quot;key&quot;:&quot;image-only&quot;,&quot;value&quot;:&quot;Campaign - Image Only&quot;}]</value>
 						<type>keyValueMap</type>
 					</property>
 					<property>

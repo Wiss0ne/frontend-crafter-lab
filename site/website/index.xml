@@ -58,7 +58,7 @@
         <objectGroupId>5d63</objectGroupId><objectId>5d634ae1-8000-4000-9000-000000000003</objectId>
         <file-name>5d634ae1-8000-4000-9000-000000000003.xml</file-name><folder-name/>
         <internal-name>HONOR MagicBook Art 14 2025 Hero</internal-name>
-        <layoutPreset_s>generic-center</layoutPreset_s><layout_s>full</layout_s><theme_s>light</theme_s><showButtons_b>true</showButtons_b>
+        <layoutPreset_s>magicbook-art</layoutPreset_s><layout_s>full</layout_s><theme_s>light</theme_s><showButtons_b>true</showButtons_b>
         <title_t>HONOR MagicBook Art 14 2025</title_t>
         <desktopImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magicbook.png</desktopImage_s>
         <mobileImage_s>/static-assets/app/honor/static/img/honor-clone/hero-magicbook-mobile.png</mobileImage_s>

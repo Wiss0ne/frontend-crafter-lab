@@ -115,6 +115,9 @@
     <#case 'watch-5-ultra'>
       <#include "/templates/web/components/honor/hero/presets/watch-5-ultra.ftl">
       <#break>
+    <#case 'magicbook-art'>
+      <#include "/templates/web/components/honor/hero/presets/magicbook-art.ftl">
+      <#break>
     <#case 'image-only'>
       <#include "/templates/web/components/honor/hero/presets/image-only.ftl">
       <#break>
