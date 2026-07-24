@@ -212,8 +212,8 @@
           <defaultValue></defaultValue>
           <help></help>
           <properties>
-            <property><name>width</name><value></value><type>range</type></property>
-            <property><name>height</name><value></value><type>range</type></property>
+            <property><name>width</name><value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value><type>range</type></property>
+            <property><name>height</name><value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value><type>range</type></property>
             <property><name>thumbnailWidth</name><value>200</value><type>int</type></property>
             <property><name>thumbnailHeight</name><value>200</value><type>int</type></property>
             <property><name>imageManager</name><value>hONORExistingImages</value><type>datasource:image</type></property>
@@ -248,8 +248,8 @@
           <defaultValue></defaultValue>
           <help></help>
           <properties>
-            <property><name>width</name><value></value><type>range</type></property>
-            <property><name>height</name><value></value><type>range</type></property>
+            <property><name>width</name><value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value><type>range</type></property>
+            <property><name>height</name><value>{ &quot;exact&quot;:&quot;&quot;, &quot;min&quot;:&quot;&quot;, &quot;max&quot;:&quot;&quot; }</value><type>range</type></property>
             <property><name>thumbnailWidth</name><value>200</value><type>int</type></property>
             <property><name>thumbnailHeight</name><value>200</value><type>int</type></property>
             <property><name>imageManager</name><value>hONORExistingImages</value><type>datasource:image</type></property>
