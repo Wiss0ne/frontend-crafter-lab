@@ -1,0 +1,244 @@
+<form>
+  <title>HONOR Products Page</title>
+  <description>Build a filterable HONOR product aggregation page with reusable product cards.</description>
+  <objectType>page</objectType>
+  <content-type>/page/honorproductspage</content-type>
+  <imageThumbnail></imageThumbnail>
+  <quickCreate>false</quickCreate>
+  <quickCreatePath></quickCreatePath>
+  <properties>
+    <property>
+      <name>display-template</name>
+      <label>Display Template</label>
+      <value>/templates/web/honor-products.ftl</value>
+      <type>template</type>
+    </property>
+    <property>
+      <name>no-template-required</name>
+      <label>No Template Required</label>
+      <value></value>
+      <type>boolean</type>
+    </property>
+    <property>
+      <name>merge-strategy</name>
+      <label>Merge Strategy</label>
+      <value>inherit-levels</value>
+      <type>string</type>
+    </property>
+  </properties>
+  <sections>
+    <section>
+      <title>Page Settings</title>
+      <description>URL, navigation and search metadata.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>file-name</type>
+          <id>file-name</id>
+          <iceId></iceId>
+          <title>Page URL</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>allowEditWithoutWarning</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>internal-name</id>
+          <iceId></iceId>
+          <title>Internal Name</title>
+          <description></description>
+          <defaultValue>HONOR Products</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>page-nav-order</type>
+          <id>placeInNav</id>
+          <iceId></iceId>
+          <title>Place in Nav</title>
+          <description></description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>navLabel</id>
+          <iceId></iceId>
+          <title>Nav Label</title>
+          <description></description>
+          <defaultValue>所有產品</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>50</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>browserTitle_s</id>
+          <iceId></iceId>
+          <title>Browser Title</title>
+          <description></description>
+          <defaultValue>HONOR 產品 | HONOR 香港</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>100</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>textarea</type>
+          <id>sEODescription_t</id>
+          <iceId></iceId>
+          <title>SEO Description</title>
+          <description></description>
+          <defaultValue>探索 HONOR 香港最新手機、手提電腦、平板、穿戴裝置與音響產品。</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>rows</name><value>4</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>allowResize</name><value>true</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+    <section>
+      <title>Catalog Introduction</title>
+      <description>Heading content shown above the filters.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>input</type>
+          <id>catalogEyebrow_s</id>
+          <iceId></iceId>
+          <title>Eyebrow</title>
+          <description></description>
+          <defaultValue>EXPLORE HONOR</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>80</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+        <field>
+          <type>input</type>
+          <id>catalogTitle_t</id>
+          <iceId></iceId>
+          <title>Catalog Title</title>
+          <description></description>
+          <defaultValue>探索 HONOR 全系列產品</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>size</name><value>50</value><type>int</type></property>
+            <property><name>maxlength</name><value>120</value><type>int</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>tokenize</name><value>false</value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>required</name><value><![CDATA[true]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+        <field>
+          <type>textarea</type>
+          <id>catalogIntro_t</id>
+          <iceId></iceId>
+          <title>Catalog Introduction</title>
+          <description></description>
+          <defaultValue>從摺疊旗艦手機到智慧穿戴裝置，按產品類別快速尋找適合你的 HONOR 裝置。</defaultValue>
+          <help></help>
+          <properties>
+            <property><name>rows</name><value>4</value><type>int</type></property>
+            <property><name>maxlength</name><value>300</value><type>int</type></property>
+            <property><name>allowResize</name><value>true</value><type>boolean</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>escapeContent</name><value>false</value><type>boolean</type></property>
+          </properties>
+          <constraints></constraints>
+        </field>
+      </fields>
+    </section>
+    <section>
+      <title>Products</title>
+      <description>Add, remove and reorder reusable HONOR product cards.</description>
+      <defaultOpen>true</defaultOpen>
+      <fields>
+        <field>
+          <type>node-selector</type>
+          <id>productCards_o</id>
+          <iceId></iceId>
+          <title>Product Cards</title>
+          <description>Only cards using the Product Card layout preset should be added here.</description>
+          <defaultValue></defaultValue>
+          <help></help>
+          <properties>
+            <property><name>minSize</name><value>1</value><type>int</type></property>
+            <property><name>maxSize</name><value>60</value><type>int</type></property>
+            <property><name>itemManager</name><value>hONORContentCards</value><type>datasource:item</type></property>
+            <property><name>readonly</name><value></value><type>boolean</type></property>
+            <property><name>disableFlattening</name><value></value><type>boolean</type></property>
+            <property><name>useSingleValueFilename</name><value></value><type>boolean</type></property>
+            <property><name>useMVS</name><value></value><type>boolean</type></property>
+          </properties>
+          <constraints>
+            <constraint><name>allowDuplicates</name><value><![CDATA[]]></value><type>boolean</type></constraint>
+          </constraints>
+        </field>
+      </fields>
+    </section>
+  </sections>
+  <datasources>
+    <datasource>
+      <type>embedded-content</type>
+      <id>hONORContentCards</id>
+      <title>HONOR Product Cards</title>
+      <interface>item</interface>
+      <properties>
+        <property>
+          <name>contentType</name>
+          <value>/component/honorcontentcard</value>
+          <type>string</type>
+        </property>
+      </properties>
+    </datasource>
+  </datasources>
+</form>

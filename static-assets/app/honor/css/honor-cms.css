@@ -57,7 +57,7 @@
 }
 
 .honor-hero__controls {
-  bottom: 18px;
+  bottom: 20px;
 }
 
 .honor-hero-arrow {
@@ -66,9 +66,8 @@
 }
 
 .honor-hero__dots {
+  align-items: center;
   flex: none;
-  position: relative;
-  margin-right: 54px;
 }
 
 .honor-hero__dots button {
@@ -86,11 +85,8 @@
   min-width: 44px;
   height: 44px !important;
   display: grid;
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 10px);
-  transform: translateY(-50%);
   flex: none;
+  margin-left: 2px;
   place-items: center;
   padding: 0 !important;
   border: 1px solid rgba(17, 17, 17, 0.08);
@@ -130,26 +126,24 @@
 
 .honor-hero-slide--preset-magic-v6 .honor-hero-slide__picture,
 .honor-hero-slide--preset-image-only .honor-hero-slide__picture {
-  height: calc(100% - 120px);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.honor-hero-slide--preset-magic-v6 .honor-hero-slide__visual {
-  object-fit: contain;
-  object-position: center top;
-}
-
+.honor-hero-slide--preset-magic-v6 .honor-hero-slide__visual,
 .honor-hero-slide--preset-image-only .honor-hero-slide__visual {
   object-fit: cover;
-  object-position: center top;
-  transform: scale(1.18);
-  transform-origin: center top;
+  object-position: center;
+  transform: none;
 }
 
 .honor-hero-slide--preset-magic-v6 > .honor-hero-slide__actions,
 .honor-hero-slide--preset-image-only > .honor-hero-slide__actions {
   top: auto;
-  bottom: 104px;
+  bottom: 102px;
   margin: 0;
 }
 
@@ -316,10 +310,10 @@
 }
 
 .honor-product-card:not(.honor-product-card--wide) > img {
-  right: 22%;
+  right: 19%;
   bottom: 26px;
-  width: 56%;
-  width: 56cqw;
+  width: 62%;
+  width: 62cqw;
   max-width: none;
   height: auto;
   object-fit: contain;
@@ -328,16 +322,16 @@
 
 .honor-product-card:not(.honor-product-card--wide)[data-product-category="audio"]
   > img {
-  right: 32%;
-  width: 36%;
-  width: 36cqw;
+  right: 29%;
+  width: 42%;
+  width: 42cqw;
 }
 
 .honor-product-card > img.honor-product-card__phone {
-  right: 4%;
+  right: 2%;
   bottom: 30px;
-  width: 34%;
-  width: 34cqw;
+  width: 40%;
+  width: 40cqw;
   max-width: none;
   height: auto;
   object-fit: contain;
@@ -346,16 +340,16 @@
 
 .honor-product-card--wide[data-product-category="laptop"]
   > img.honor-product-card__phone {
-  right: 1%;
-  width: 38%;
-  width: 38cqw;
+  right: 0;
+  width: 44%;
+  width: 44cqw;
 }
 
 .honor-product-card--wide[data-product-category="tablet"]
   > img.honor-product-card__phone {
-  right: 3%;
-  width: 36%;
-  width: 36cqw;
+  right: 1%;
+  width: 42%;
+  width: 42cqw;
 }
 
 .honor-events,
@@ -441,17 +435,13 @@
 
   .honor-hero-slide--preset-magic-v6 .honor-hero-slide__picture,
   .honor-hero-slide--preset-image-only .honor-hero-slide__picture {
-    height: calc(100% - 120px);
-  }
-
-  .honor-hero-slide--preset-image-only .honor-hero-slide__visual {
-    transform: none;
+    height: 100%;
   }
 
   .honor-hero-slide--preset-magic-v6 > .honor-hero-slide__actions,
   .honor-hero-slide--preset-image-only > .honor-hero-slide__actions {
     top: auto;
-    bottom: 88px;
+    bottom: 96px;
     width: calc(100% - 112px);
   }
 
@@ -554,7 +544,7 @@
   .honor-product-card--wide,
   .honor-product-card:not(.honor-product-card--wide) {
     grid-column: auto;
-    min-height: clamp(500px, 65vw, 560px);
+    min-height: clamp(580px, 76vw, 640px);
   }
 
   .honor-product-card__copy,
@@ -577,7 +567,7 @@
     right: 0;
     left: 0;
     bottom: 24px;
-    width: min(68cqw, 380px);
+    width: min(74cqw, 400px);
     max-width: none;
     height: auto;
     margin-inline: auto;
@@ -587,12 +577,12 @@
 
   .honor-product-card:not(.honor-product-card--wide)[data-product-category="wearable"]
     > img {
-    width: min(58cqw, 360px);
+    width: min(66cqw, 390px);
   }
 
   .honor-product-card:not(.honor-product-card--wide)[data-product-category="audio"]
     > img {
-    width: min(40cqw, 250px);
+    width: min(48cqw, 280px);
   }
 
   .honor-product-card--wide[data-product-category="laptop"]
@@ -600,7 +590,7 @@
   .honor-product-card--wide[data-product-category="tablet"]
     > img.honor-product-card__phone {
     right: 0;
-    width: min(70cqw, 400px);
+    width: min(76cqw, 410px);
   }
 
   .honor-event-card {
@@ -613,6 +603,30 @@
 
   .honor-section__heading--row > .honor-text-link {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .honor-product-card > img.honor-product-card__phone,
+  .honor-product-card:not(.honor-product-card--wide) > img {
+    width: min(72cqw, 360px);
+  }
+
+  .honor-product-card:not(.honor-product-card--wide)[data-product-category="wearable"]
+    > img {
+    width: min(64cqw, 350px);
+  }
+
+  .honor-product-card:not(.honor-product-card--wide)[data-product-category="audio"]
+    > img {
+    width: min(46cqw, 240px);
+  }
+
+  .honor-product-card--wide[data-product-category="laptop"]
+    > img.honor-product-card__phone,
+  .honor-product-card--wide[data-product-category="tablet"]
+    > img.honor-product-card__phone {
+    width: min(74cqw, 370px);
   }
 }
 
@@ -643,7 +657,7 @@
   .honor-product-card,
   .honor-product-card--wide,
   .honor-product-card:not(.honor-product-card--wide) {
-    min-height: 500px;
+    min-height: 580px;
   }
 
   .honor-product-card > img.honor-product-card__phone,

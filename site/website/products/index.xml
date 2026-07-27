@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+  <content-type>/page/honorproductspage</content-type>
+  <display-template>/templates/web/honor-products.ftl</display-template>
+  <no-template-required/>
+  <merge-strategy>inherit-levels</merge-strategy>
+  <objectGroupId>7600</objectGroupId>
+  <objectId>76000000-0000-4000-8000-000000000001</objectId>
+  <internal-name>HONOR Products</internal-name>
+  <navLabel>所有產品</navLabel>
+  <browserTitle_s>HONOR 產品 | HONOR 香港</browserTitle_s>
+  <sEODescription_t>探索 HONOR 香港最新手機、手提電腦、平板、穿戴裝置與音響產品。</sEODescription_t>
+  <file-name>index.xml</file-name>
+  <folder-name>products</folder-name>
+  <placeInNav>true</placeInNav>
+  <orderDefault_f>100</orderDefault_f>
+  <catalogEyebrow_s>EXPLORE HONOR</catalogEyebrow_s>
+  <catalogTitle_t>探索 HONOR 全系列產品</catalogTitle_t>
+  <catalogIntro_t>從摺疊旗艦手機到智慧穿戴裝置，按產品類別快速尋找適合你的 HONOR 裝置。</catalogIntro_t>
+
+  <productCards_o item-list="true">
+    <item datasource="hONORContentCards" inline="true"><key>76100000-0000-4000-8000-000000000001</key><value>HONOR Magic V6 Product</value>
+      <component id="76100000-0000-4000-8000-000000000001">
+        <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>7610</objectGroupId><objectId>76100000-0000-4000-8000-000000000001</objectId><file-name>76100000-0000-4000-8000-000000000001.xml</file-name><folder-name/>
+        <internal-name>HONOR Magic V6 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>phone</category_s><cardSize_s>standard</cardSize_s><theme_s>light</theme_s>
+        <eyebrow_s>手機</eyebrow_s><title_t>HONOR Magic V6</title_t><tagline_t>AI | 至堅至薄 實力巔峰</tagline_t>
+        <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-magic-v6.webp</primaryImage_s><primaryImageAlt_s>HONOR Magic V6</primaryImageAlt_s>
+        <primaryButtonLabel_s>購買</primaryButtonLabel_s><primaryButtonURL_s>https://honor-hk.com/product/22e79876-3d9f-407f-a6ca-94cb31923d13</primaryButtonURL_s>
+        <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/phones/honor-magic-v6/</secondaryButtonURL_s>
+      </component>
+    </item>
+    <item datasource="hONORContentCards" inline="true"><key>76200000-0000-4000-8000-000000000002</key><value>HONOR MagicBook Art 14 2025 Product</value>
+      <component id="76200000-0000-4000-8000-000000000002">
+        <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>7620</objectGroupId><objectId>76200000-0000-4000-8000-000000000002</objectId><file-name>76200000-0000-4000-8000-000000000002.xml</file-name><folder-name/>
+        <internal-name>HONOR MagicBook Art 14 2025 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>laptop</category_s><cardSize_s>standard</cardSize_s><theme_s>light</theme_s>
+        <eyebrow_s>手提電腦</eyebrow_s><title_t>HONOR MagicBook Art 14 2025</title_t>
+        <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-magicbook-art-14-2025.webp</primaryImage_s><primaryImageAlt_s>HONOR MagicBook Art 14 2025</primaryImageAlt_s>
+        <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/laptops/honor-magicbook-art-14-2025/</secondaryButtonURL_s>
+      </component>
+    </item>
+    <item datasource="hONORContentCards" inline="true"><key>76300000-0000-4000-8000-000000000003</key><value>HONOR MagicPad4 Product</value>
+      <component id="76300000-0000-4000-8000-000000000003">
+        <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>7630</objectGroupId><objectId>76300000-0000-4000-8000-000000000003</objectId><file-name>76300000-0000-4000-8000-000000000003.xml</file-name><folder-name/>
+        <internal-name>HONOR MagicPad4 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>tablet</category_s><cardSize_s>standard</cardSize_s><theme_s>violet</theme_s>
+        <eyebrow_s>平板</eyebrow_s><title_t>HONOR MagicPad4</title_t>
+        <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-magicpad4.webp</primaryImage_s><primaryImageAlt_s>HONOR MagicPad4</primaryImageAlt_s>
+        <primaryButtonLabel_s>購買</primaryButtonLabel_s><primaryButtonURL_s>https://honor-hk.com/product/29b4a031-3e11-4724-8377-c358382ab868</primaryButtonURL_s>
+        <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/tablets/honor-magicpad-4/</secondaryButtonURL_s>
+      </component>
+    </item>
+    <item datasource="hONORContentCards" inline="true"><key>76400000-0000-4000-8000-000000000004</key><value>HONOR Watch 6 Product</value>
+      <component id="76400000-0000-4000-8000-000000000004">
+        <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>7640</objectGroupId><objectId>76400000-0000-4000-8000-000000000004</objectId><file-name>76400000-0000-4000-8000-000000000004.xml</file-name><folder-name/>
+        <internal-name>HONOR Watch 6 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>wearable</category_s><cardSize_s>standard</cardSize_s><theme_s>light</theme_s>
+        <eyebrow_s>穿戴</eyebrow_s><title_t>HONOR Watch 6</title_t><tagline_t>續航無極限</tagline_t>
+        <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-watch6.png</primaryImage_s><primaryImageAlt_s>HONOR Watch 6</primaryImageAlt_s>
+        <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/wearables/honor-watch-6/</secondaryButtonURL_s>
+      </component>
+    </item>
+    <item datasource="hONORContentCards" inline="true"><key>76500000-0000-4000-8000-000000000005</key><value>HONOR Earbuds X6 Product</value>
+      <component id="76500000-0000-4000-8000-000000000005">
+        <content-type>/component/honorcontentcard</content-type><display-template>/templates/web/honor-content-card.ftl</display-template><no-template-required/><merge-strategy>inherit-levels</merge-strategy>
+        <objectGroupId>7650</objectGroupId><objectId>76500000-0000-4000-8000-000000000005</objectId><file-name>76500000-0000-4000-8000-000000000005.xml</file-name><folder-name/>
+        <internal-name>HONOR Earbuds X6 Product</internal-name><layoutPreset_s>product-card</layoutPreset_s><category_s>audio</category_s><cardSize_s>standard</cardSize_s><theme_s>light</theme_s>
+        <eyebrow_s>音響</eyebrow_s><title_t>HONOR Earbuds X6</title_t>
+        <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/product-earbuds-x6.png</primaryImage_s><primaryImageAlt_s>HONOR Earbuds X6</primaryImageAlt_s>
+        <secondaryButtonLabel_s>了解更多</secondaryButtonLabel_s><secondaryButtonURL_s>https://www.honor.com/hk/audio/honor-earbuds-x6/</secondaryButtonURL_s>
+      </component>
+    </item>
+  </productCards_o>
+</page>

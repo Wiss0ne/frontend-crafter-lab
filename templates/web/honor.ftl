@@ -1,6 +1,10 @@
 <#ftl output_format="HTML" auto_esc=true>
 <#import "/templates/system/common/crafter.ftl" as crafter />
 <#import "/templates/web/components/honor/url-utils.ftl" as honorUrl />
+<#assign honorProductsUrl = '/products/'>
+<#if siteContext?? && siteContext.siteName??>
+  <#assign honorProductsUrl = '/products/?crafterSite=' + siteContext.siteName>
+</#if>
 
 <!DOCTYPE html>
 <html lang="zh-HK">
@@ -49,7 +53,7 @@
         <a href="#honor-products">手提電腦</a>
         <a href="#honor-products">平板</a>
         <a href="#honor-products">穿戴</a>
-        <a href="#honor-products">更多產品</a>
+        <a href="${honorProductsUrl}">更多產品</a>
         <a href="#honor-technology">MagicOS</a>
         <a href="#honor-technology">HONOR AI <span class="honor-ai-mark">✦</span></a>
         <a href="#honor-support">服務支援</a>
@@ -75,6 +79,7 @@
       <a href="#honor-products">手提電腦</a>
       <a href="#honor-products">平板</a>
       <a href="#honor-products">穿戴</a>
+      <a href="${honorProductsUrl}">所有產品</a>
       <a href="#honor-technology">MagicOS 與 HONOR AI</a>
       <a href="#honor-support">服務支援</a>
     </div>
