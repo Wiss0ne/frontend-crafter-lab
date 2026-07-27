@@ -355,7 +355,7 @@
       <properties>
         <property>
           <name>options</name>
-          <value>[{&quot;key&quot;:&quot;feature-banner&quot;,&quot;value&quot;:&quot;Feature Banner - Two Images&quot;},{&quot;key&quot;:&quot;product-card&quot;,&quot;value&quot;:&quot;Product Card&quot;},{&quot;key&quot;:&quot;event-orb&quot;,&quot;value&quot;:&quot;Event - Orb Artwork&quot;},{&quot;key&quot;:&quot;technology-camera&quot;,&quot;value&quot;:&quot;Technology - Camera&quot;},{&quot;key&quot;:&quot;technology-ai&quot;,&quot;value&quot;:&quot;Technology - AI&quot;}]</value>
+          <value>[{&quot;key&quot;:&quot;feature-magic8&quot;,&quot;value&quot;:&quot;Feature - Magic8 Pro&quot;},{&quot;key&quot;:&quot;feature-600-lite&quot;,&quot;value&quot;:&quot;Feature - 600 Lite&quot;},{&quot;key&quot;:&quot;feature-banner&quot;,&quot;value&quot;:&quot;Feature - Balanced Two Images&quot;},{&quot;key&quot;:&quot;product-card&quot;,&quot;value&quot;:&quot;Product Card&quot;},{&quot;key&quot;:&quot;event-orb&quot;,&quot;value&quot;:&quot;Event - Orb Artwork&quot;},{&quot;key&quot;:&quot;technology-camera&quot;,&quot;value&quot;:&quot;Technology - Camera&quot;},{&quot;key&quot;:&quot;technology-ai&quot;,&quot;value&quot;:&quot;Technology - AI&quot;}]</value>
           <type>keyValueMap</type>
         </property>
         <property><name>showkeys</name><value>false</value><type>boolean</type></property>

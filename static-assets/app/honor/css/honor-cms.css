@@ -52,8 +52,8 @@
 
 /* Hero */
 .honor-hero {
-  height: clamp(600px, 35vw, 700px);
-  min-height: 600px;
+  height: clamp(560px, 39vw, 760px);
+  min-height: 0;
 }
 
 .honor-hero__controls {
@@ -68,6 +68,41 @@
 .honor-hero__dots button {
   min-width: 28px;
   height: 4px;
+}
+
+.honor-hero__pause {
+  width: 32px;
+  min-width: 32px;
+  height: 32px !important;
+  display: grid;
+  place-items: center;
+  padding: 0 !important;
+  border: 0;
+  border-radius: 50%;
+  color: #111;
+  background: transparent !important;
+  cursor: pointer;
+}
+
+.honor-hero__pause span {
+  width: 10px;
+  height: 12px;
+  border-right: 3px solid currentColor;
+  border-left: 3px solid currentColor;
+}
+
+.honor-hero__pause[aria-pressed="true"] span {
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border: 6px solid transparent;
+  border-right: 0;
+  border-left: 9px solid currentColor;
+}
+
+.honor-hero__pause:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
 }
 
 .honor-hero-slide--preset-magic-v6,
@@ -145,43 +180,65 @@
 
 /* Feature banners */
 .honor-magic8 {
-  height: clamp(720px, 48vw, 840px);
-  min-height: 720px;
+  --honor-feature-height: clamp(700px, 52vw, 980px);
+  --honor-feature-art-height: clamp(540px, 44vw, 820px);
+  --honor-feature-edge: clamp(-32px, -1.6vw, -12px);
+  height: var(--honor-feature-height);
+  min-height: 0;
+  isolation: isolate;
 }
 
 .honor-magic8__copy {
-  top: 7%;
+  top: clamp(44px, 6.5%, 72px);
   padding-inline: 24px;
 }
 
 .honor-magic8__copy h2 {
-  font-size: clamp(46px, 4.8vw, 76px);
+  font-size: clamp(44px, 4.6vw, 78px);
 }
 
 .honor-magic8__phone {
-  bottom: 42px;
-  width: 48%;
-  height: 52%;
+  bottom: -1.5%;
+  width: auto;
+  max-width: none;
+  height: var(--honor-feature-art-height);
   object-fit: contain;
-  object-position: center bottom;
+  object-position: bottom;
+  transform: none;
 }
 
 .honor-magic8__phone--left {
-  left: 2%;
-  transform: translateX(-2%);
+  left: var(--honor-feature-edge);
 }
 
 .honor-magic8__phone--right {
-  right: 2%;
-  transform: translateX(2%);
+  right: var(--honor-feature-edge);
 }
 
 .honor-magic8:hover .honor-magic8__phone--left {
-  transform: translateX(0);
+  transform: none;
 }
 
 .honor-magic8:hover .honor-magic8__phone--right {
-  transform: translateX(0);
+  transform: none;
+}
+
+.honor-magic8--magic8 {
+  --honor-feature-height: clamp(720px, 54vw, 1000px);
+  --honor-feature-art-height: clamp(570px, 46vw, 860px);
+  --honor-feature-edge: clamp(-44px, -2.1vw, -16px);
+}
+
+.honor-magic8--600-lite {
+  --honor-feature-height: clamp(680px, 50vw, 920px);
+  --honor-feature-art-height: clamp(520px, 42vw, 780px);
+  --honor-feature-edge: clamp(-36px, -1.8vw, -14px);
+}
+
+.honor-magic8::after {
+  bottom: 0;
+  height: 7%;
+  opacity: 0.7;
 }
 
 /* Section rhythm and product grid */
@@ -268,13 +325,14 @@
 
 @media (max-width: 1120px) {
   .honor-hero {
-    height: 620px;
-    min-height: 620px;
+    height: clamp(560px, 58vw, 650px);
+    min-height: 0;
   }
 
   .honor-magic8 {
-    height: 700px;
-    min-height: 700px;
+    --honor-feature-height: clamp(660px, 68vw, 760px);
+    --honor-feature-art-height: clamp(430px, 50vw, 540px);
+    --honor-feature-edge: clamp(-34px, -2.4vw, -18px);
   }
 
   .honor-product-card {
@@ -308,8 +366,8 @@
   }
 
   .honor-hero {
-    height: 680px;
-    min-height: 680px;
+    height: clamp(620px, 160vw, 700px);
+    min-height: 0;
   }
 
   .honor-hero__controls {
@@ -379,12 +437,13 @@
   }
 
   .honor-magic8 {
-    height: 680px;
-    min-height: 680px;
+    --honor-feature-height: clamp(620px, 150vw, 760px);
+    --honor-feature-art-height: clamp(360px, 68vw, 520px);
+    --honor-feature-edge: clamp(-84px, -10vw, -36px);
   }
 
   .honor-magic8__copy {
-    top: 6%;
+    top: clamp(34px, 6%, 46px);
     padding: 0 18px;
   }
 
@@ -402,17 +461,8 @@
   }
 
   .honor-magic8__phone {
-    bottom: 28px;
-    width: 60%;
-    height: 46%;
-  }
-
-  .honor-magic8__phone--left {
-    left: -5%;
-  }
-
-  .honor-magic8__phone--right {
-    right: -5%;
+    bottom: -1%;
+    height: var(--honor-feature-art-height);
   }
 
   .honor-section {
@@ -504,8 +554,8 @@
 
 @media (max-width: 480px) {
   .honor-hero {
-    height: 650px;
-    min-height: 650px;
+    height: clamp(600px, 166vw, 660px);
+    min-height: 0;
   }
 
   .honor-hero-slide--preset-magic-v5 .honor-hero-slide__content {
@@ -513,8 +563,9 @@
   }
 
   .honor-magic8 {
-    height: 620px;
-    min-height: 620px;
+    --honor-feature-height: clamp(600px, 160vw, 680px);
+    --honor-feature-art-height: clamp(340px, 98vw, 430px);
+    --honor-feature-edge: clamp(-64px, -14vw, -42px);
   }
 
   .honor-magic8__copy h2 {
@@ -522,8 +573,7 @@
   }
 
   .honor-magic8__phone {
-    bottom: 22px;
-    height: 43%;
+    bottom: -1%;
   }
 
   .honor-product-card,
@@ -540,5 +590,17 @@
 
   .honor-event-card {
     min-height: 520px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .honor-hero-slide,
+  .honor-hero__dots button,
+  .honor-magic8__phone,
+  .honor-product-card,
+  .honor-button,
+  .honor-text-link {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
   }
 }

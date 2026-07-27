@@ -108,7 +108,7 @@
         <no-template-required/><merge-strategy>inherit-levels</merge-strategy>
         <objectGroupId>1100</objectGroupId><objectId>11000000-0000-0000-0000-000000000001</objectId>
         <file-name>11000000-0000-0000-0000-000000000001.xml</file-name><folder-name/>
-        <internal-name>HONOR Magic8 Pro Feature</internal-name><layoutPreset_s>feature-banner</layoutPreset_s>
+        <internal-name>HONOR Magic8 Pro Feature</internal-name><layoutPreset_s>feature-magic8</layoutPreset_s>
         <theme_s>light</theme_s><anchorId_s>honor-magic8</anchorId_s><eyebrow_s>AI FLAGSHIP</eyebrow_s>
         <title_t>HONOR Magic8 Pro</title_t><tagline_t>AI | 視夜新視野</tagline_t>
         <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/featured-magic8-left.png</primaryImage_s>
@@ -126,7 +126,7 @@
         <no-template-required/><merge-strategy>inherit-levels</merge-strategy>
         <objectGroupId>1200</objectGroupId><objectId>12000000-0000-0000-0000-000000000002</objectId>
         <file-name>12000000-0000-0000-0000-000000000002.xml</file-name><folder-name/>
-        <internal-name>HONOR 600 Lite Feature</internal-name><layoutPreset_s>feature-banner</layoutPreset_s>
+        <internal-name>HONOR 600 Lite Feature</internal-name><layoutPreset_s>feature-600-lite</layoutPreset_s>
         <theme_s>light</theme_s><anchorId_s>honor-600-lite</anchorId_s><eyebrow_s>SLIM AI PHONE</eyebrow_s>
         <title_t>HONOR 600 Lite</title_t>
         <primaryImage_s>/static-assets/app/honor/static/img/honor-clone/featured-600-lite-left.avif</primaryImage_s>

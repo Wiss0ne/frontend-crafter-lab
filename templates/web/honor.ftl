@@ -81,6 +81,8 @@
   </div>
 
   <main id="honor-main" class="honor-clone">
+    <h1 class="honor-visually-hidden">${contentModel.browserTitle_s!'HONOR 香港'}</h1>
+
     <section class="honor-hero" aria-label="精選產品">
       <div class="honor-hero__track">
         <#if contentModel.heroSlides_o??
@@ -120,11 +122,20 @@
                   class="is-active"
                 </#if>
                 type="button"
+                data-hero-dot
                 aria-pressed="${(slide?index == 0)?c}"
                 aria-label="顯示第 ${slide?index + 1} 張精選產品"
               ></button>
             </#list>
           </#if>
+
+          <button
+            class="honor-hero__pause"
+            type="button"
+            data-hero-pause
+            aria-pressed="false"
+            aria-label="暫停自動輪播"
+          ><span aria-hidden="true"></span></button>
         </div>
 
         <button
@@ -150,13 +161,13 @@
           <h2>${contentModel.productsTitle_t!'所有產品'}</h2>
         </div>
 
-        <div class="honor-product-tabs" role="tablist" aria-label="產品分類">
-          <button class="is-active" type="button" role="tab" aria-pressed="true" data-product-filter="all">最新產品</button>
-          <button type="button" role="tab" aria-pressed="false" data-product-filter="phone">手機</button>
-          <button type="button" role="tab" aria-pressed="false" data-product-filter="laptop">手提電腦</button>
-          <button type="button" role="tab" aria-pressed="false" data-product-filter="tablet">平板</button>
-          <button type="button" role="tab" aria-pressed="false" data-product-filter="wearable">穿戴</button>
-          <button type="button" role="tab" aria-pressed="false" data-product-filter="audio">音響</button>
+        <div class="honor-product-tabs" role="group" aria-label="產品分類">
+          <button class="is-active" type="button" aria-pressed="true" data-product-filter="all">最新產品</button>
+          <button type="button" aria-pressed="false" data-product-filter="phone">手機</button>
+          <button type="button" aria-pressed="false" data-product-filter="laptop">手提電腦</button>
+          <button type="button" aria-pressed="false" data-product-filter="tablet">平板</button>
+          <button type="button" aria-pressed="false" data-product-filter="wearable">穿戴</button>
+          <button type="button" aria-pressed="false" data-product-filter="audio">音響</button>
         </div>
 
         <div class="honor-product-grid" aria-live="polite">

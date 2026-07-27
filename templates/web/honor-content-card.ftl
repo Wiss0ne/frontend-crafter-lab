@@ -27,34 +27,49 @@
   </#if>
 </#macro>
 
+<#macro featureBanner variant='balanced'>
+  <section
+    id="${contentModel.anchorId_s!'honor-feature'}"
+    class="honor-magic8 honor-magic8--${variant}"
+  >
+    <div class="honor-magic8__copy">
+      <#if (contentModel.eyebrow_s!'')?has_content>
+        <p class="honor-eyebrow">${contentModel.eyebrow_s}</p>
+      </#if>
+      <h2>${contentModel.title_t!''}</h2>
+      <#if (contentModel.tagline_t!'')?has_content>
+        <p>${contentModel.tagline_t}</p>
+      </#if>
+      <@actions light=(theme == 'dark') className='honor-magic8__actions' />
+    </div>
+    <#if primaryImage?has_content>
+      <img
+        class="honor-magic8__phone honor-magic8__phone--left"
+        src="${honorUrl.safe(primaryImage)}"
+        alt="${(contentModel.primaryImageAlt_s)!(contentModel.title_t!'')}"
+      >
+    </#if>
+    <#if secondaryImage?has_content>
+      <img
+        class="honor-magic8__phone honor-magic8__phone--right"
+        src="${honorUrl.safe(secondaryImage)}"
+        alt="${(contentModel.secondaryImageAlt_s)!(contentModel.title_t!'')}"
+      >
+    </#if>
+  </section>
+</#macro>
+
 <#switch preset>
+  <#case 'feature-magic8'>
+    <@featureBanner variant='magic8' />
+    <#break>
+
+  <#case 'feature-600-lite'>
+    <@featureBanner variant='600-lite' />
+    <#break>
+
   <#case 'feature-banner'>
-    <section id="${contentModel.anchorId_s!'honor-feature'}" class="honor-magic8">
-      <div class="honor-magic8__copy">
-        <#if (contentModel.eyebrow_s!'')?has_content>
-          <p class="honor-eyebrow">${contentModel.eyebrow_s}</p>
-        </#if>
-        <h2>${contentModel.title_t!''}</h2>
-        <#if (contentModel.tagline_t!'')?has_content>
-          <p>${contentModel.tagline_t}</p>
-        </#if>
-        <@actions light=(theme == 'dark') className='honor-magic8__actions' />
-      </div>
-      <#if primaryImage?has_content>
-        <img
-          class="honor-magic8__phone honor-magic8__phone--left"
-          src="${honorUrl.safe(primaryImage)}"
-          alt="${(contentModel.primaryImageAlt_s)!(contentModel.title_t!'')}"
-        >
-      </#if>
-      <#if secondaryImage?has_content>
-        <img
-          class="honor-magic8__phone honor-magic8__phone--right"
-          src="${honorUrl.safe(secondaryImage)}"
-          alt="${(contentModel.secondaryImageAlt_s)!(contentModel.title_t!'')}"
-        >
-      </#if>
-    </section>
+    <@featureBanner />
     <#break>
 
   <#case 'event-orb'>
