@@ -65,22 +65,40 @@
   height: 48px;
 }
 
+.honor-hero__dots {
+  flex: none;
+  position: relative;
+  margin-right: 54px;
+}
+
 .honor-hero__dots button {
-  min-width: 28px;
+  width: 24px;
+  min-width: 24px;
   height: 4px;
 }
 
-.honor-hero__pause {
-  width: 32px;
-  min-width: 32px;
-  height: 32px !important;
+.honor-hero__dots button.is-active {
+  width: 44px;
+}
+
+.honor-hero__dots .honor-hero__pause {
+  width: 44px;
+  min-width: 44px;
+  height: 44px !important;
   display: grid;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translateY(-50%);
+  flex: none;
   place-items: center;
   padding: 0 !important;
-  border: 0;
+  border: 1px solid rgba(17, 17, 17, 0.08);
   border-radius: 50%;
   color: #111;
-  background: transparent !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
   cursor: pointer;
 }
 
@@ -129,9 +147,14 @@
   margin: 0;
 }
 
+.honor-hero-slide--preset-watch-5-ultra .honor-hero-slide__visual {
+  transform: scale(1.12);
+  transform-origin: center;
+}
+
 .honor-hero-slide--preset-magicbook-art {
   display: grid;
-  grid-template-columns: minmax(0, 62%) minmax(320px, 38%);
+  grid-template-columns: minmax(0, 58%) minmax(360px, 42%);
   background: #e8eef3;
 }
 
@@ -147,6 +170,8 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+  transform: scale(0.9);
+  transform-origin: center;
 }
 
 .honor-hero-slide--preset-magicbook-art .honor-hero-slide__content {
@@ -243,6 +268,7 @@
 
 /* Section rhythm and product grid */
 .honor-section {
+  width: min(calc(100% - clamp(32px, 4vw, 80px)), 1760px);
   padding-top: 88px;
   padding-bottom: 88px;
 }
@@ -265,11 +291,11 @@
 }
 
 .honor-product-card {
-  min-height: 540px;
+  min-height: clamp(520px, 34vw, 680px);
 }
 
 .honor-product-card--wide {
-  min-height: 610px;
+  min-height: clamp(580px, 42vw, 800px);
 }
 
 .honor-product-card__copy,
@@ -336,11 +362,11 @@
   }
 
   .honor-product-card {
-    min-height: 510px;
+    min-height: clamp(500px, 46vw, 520px);
   }
 
   .honor-product-card--wide {
-    min-height: 570px;
+    min-height: clamp(540px, 52vw, 580px);
   }
 }
 
@@ -436,6 +462,10 @@
     height: 62%;
   }
 
+  .honor-hero-slide--preset-magicbook-art .honor-hero-slide__visual {
+    transform: none;
+  }
+
   .honor-magic8 {
     --honor-feature-height: clamp(620px, 150vw, 760px);
     --honor-feature-art-height: clamp(360px, 68vw, 520px);
@@ -502,7 +532,7 @@
   .honor-product-card--wide,
   .honor-product-card:not(.honor-product-card--wide) {
     grid-column: auto;
-    min-height: 540px;
+    min-height: clamp(500px, 65vw, 560px);
   }
 
   .honor-product-card__copy,
